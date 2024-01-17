@@ -250,17 +250,16 @@ span {
   justify-content: center;
   background-color: var(--secondary-color);
   height: 100%;
-  
 }
 
 .simply-section {
-  width: 180px;
+  width: 200px;
   height: 180px;
-  margin: 0 20px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .simply-amount {
