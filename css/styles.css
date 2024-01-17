@@ -186,7 +186,7 @@ span {
 }
 
 .about__content h3 {
-  
+
   color: var(--primary-color);
 }
 
@@ -212,24 +212,72 @@ span {
 
 /* proyect */
 
-.section_proy{
+.section_proy {
   padding: 2rem;
   background-color: var(--extra-light);
 }
 
-.card{
+.card {
   background-color: var(--extra-light);
   border: #ffffff;
 }
-.card img{
+
+.card img {
+  border-radius: 10px 20px;
   padding-top: 10px;
   width: auto;
   height: 250px;
   transition: 0.5s;
 }
-.card img:hover{
+
+.card img:hover {
   transform: scale(0.9);
 }
+
+
+/* count */
+/* ----- Cuenta Regresiva ----- */
+
+
+.contador{
+  background-color: var(--extra-light);
+  height: 300px;
+  text-align: center;
+  align-items: center;
+}
+#cuenta {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  height: 100%;
+  
+}
+
+.simply-section {
+  width: 180px;
+  height: 180px;
+  margin: 0 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.simply-amount {
+  color: var(--primary-color);
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.simply-word {
+  color: var(--primary-color);
+  font-weight: 100;
+  font-size: 20px;
+}
+
+
+/* ---------------------------- */
 
 /* Contact Section Styles */
 .contact__container {
