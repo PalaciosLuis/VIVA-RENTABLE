@@ -4,7 +4,7 @@
   --primary-color: #145b6b;
   --primary-color-dark: #3f98a7;
   --secondary-color: #131516;
-  --color-icon:#42ac39;
+  --color-icon: #42ac39;
   --text-dark: #333333;
   --text-light: #767268;
   --extra-light: #f8f8f8;
@@ -18,6 +18,16 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* General Styling */
 .section__container {
   max-width: var(--max-width);
   padding: 5rem 1rem;
@@ -44,7 +54,7 @@
   transition: 0.3s;
 }
 
-
+/* Button Styles */
 .btn__secondary {
   color: var(--white);
   border: 2px solid var(--primary-color);
@@ -60,6 +70,7 @@
   border-color: var(--primary-color-dark);
 }
 
+/* Image and Link Styles */
 img {
   width: 100%;
   display: flex;
@@ -69,15 +80,7 @@ a {
   text-decoration: none;
 }
 
-html,
-body {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
+/* Navigation Styles */
 .nav__bar {
   max-width: var(--max-width);
   margin: auto;
@@ -121,17 +124,19 @@ body {
   justify-content: flex-end;
   gap: 1rem;
 }
-span{
+
+span {
   color: var(--color-icon);
 }
+
+/* Header Styles */
 .header {
   background-color: var(--extra-light);
 }
 
 .header__container {
   display: grid;
-  grid-template-columns:
-    minmax(0, 1fr) minmax(0, calc(var(--max-width) / 2)) minmax(0, calc(var(--max-width) / 2)) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, calc(var(--max-width) / 2)) minmax(0, calc(var(--max-width) / 2)) minmax(0, 1fr);
 }
 
 .header__content {
@@ -160,7 +165,6 @@ span{
 
 .header__image {
   grid-column: 3/5;
-
 }
 
 .header__image img {
@@ -168,6 +172,7 @@ span{
   object-fit: cover;
 }
 
+/* About Section Styles */
 .about__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -181,9 +186,7 @@ span{
 }
 
 .about__content h3 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  font-weight: 400;
+  
   color: var(--primary-color);
 }
 
@@ -207,73 +210,27 @@ span{
   color: var(--text-dark);
 }
 
-/* PROJECTS */
-#project{
+/* proyect */
+
+.section_proy{
+  padding: 2rem;
   background-color: var(--extra-light);
-  text-align: center;
-  
-}
-#project h2{
-  color: var(--primary-color);
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
 }
 
-.project__container 
-{
-  padding: 5rem 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 20px;
-  gap: 2rem;
-  width: 100%;
-
-
+.row,.col{
+  border: 1px solid var(--primary-color);
+}
+.card img{
+  padding-top: 10px;
+  width: auto;
+  height: 250px;
+  transition: 0.5s;
+}
+.card img:hover{
+  transform: scale(0.9);
 }
 
-figure {
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 20px;
-  width: 100%;
-  position: relative;
-}
-
-figure img {
-  margin-bottom: 2rem;
-  transition: 0.3s;
-  border-radius: 10px;
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-figure img:hover {
-  transform: scale(1.1);
-}
-figcaption {
-  height: 100%;
-  text-align: center;
-  padding: 20px;
-}
-
-figure button {
-  width: 50%;
-  margin-top: auto;
-  /* Alinear el botón hacia abajo */
-  margin-left: 25%;
-  /* Alinear el botón hacia el centro */
-  margin-right: 25%;
-}
-
-
-
-/* --------------------- */
-
-
-
+/* Contact Section Styles */
 .contact__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -332,6 +289,7 @@ figure button {
   background-color: var(--primary-color-dark);
 }
 
+/* Footer Styles */
 .footer {
   background-color: var(--secondary-color);
 }
@@ -388,17 +346,16 @@ figure button {
   text-align: center;
 }
 
-@media (width < 1200px) {
+/* Media Queries */
+@media (max-width: 1200px) {
   .nav__btns {
     display: none;
   }
 }
 
-@media (width < 900px) {
-
+@media (max-width: 900px) {
   .project__container {
     grid-template-columns: 1fr;
-    /* Cambia a una sola columna */
   }
 
   .header__container {
@@ -414,10 +371,7 @@ figure button {
     grid-area: 1/1/2/2;
   }
 
-  .about__container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
+  .about__container,
   .contact__container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -431,18 +385,14 @@ figure button {
   }
 }
 
-@media (width < 600px) {
-
-
+@media (max-width: 600px) {
   .project__container {
     grid-template-columns: 1fr;
-    /* Cambia a una sola columna */
   }
 
   .header__image {
     width: 200px;
     margin: auto;
-
   }
 
   .header__image img {
