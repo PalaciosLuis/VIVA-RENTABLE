@@ -84,7 +84,7 @@ a {
 .nav__bar {
   max-width: var(--max-width);
   margin: auto;
-  padding: 2rem 1rem;
+  padding: 0.6rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
