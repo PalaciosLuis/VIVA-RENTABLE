@@ -217,8 +217,9 @@ span {
   background-color: var(--extra-light);
 }
 
-.row,.col{
-  border: 1px solid var(--primary-color);
+.card{
+  background-color: var(--extra-light);
+  border: #ffffff;
 }
 .card img{
   padding-top: 10px;
