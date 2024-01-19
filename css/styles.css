@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Onest:wght@300;400;600&family=Roboto+Slab&family=Roboto:wght@400;700&display=swap');
 
 :root {
   --primary-color: #145b6b;
@@ -10,6 +11,7 @@
   --extra-light: #f8f8f8;
   --white: #ffffff;
   --max-width: 1200px;
+  --font-family: "Onest", sans-serif;	
 }
 
 * {
@@ -24,8 +26,11 @@ body {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-family);
 }
+
 
 /* General Styling */
 .section__container {
@@ -36,7 +41,7 @@ body {
 
 .section__header {
   margin-bottom: 5px;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
   color: var(--text-dark);
 }
@@ -68,6 +73,7 @@ body {
 .btn__secondary:hover {
   background-color: var(--primary-color-dark);
   border-color: var(--primary-color-dark);
+  color: var(--white);
 }
 
 /* Image and Link Styles */
@@ -82,12 +88,14 @@ a {
 
 /* Navigation Styles */
 .nav__bar {
+  
   max-width: var(--max-width);
   margin: auto;
   padding: 0.7rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .nav__logo {
@@ -106,6 +114,12 @@ a {
   align-items: center;
   gap: 2rem;
 }
+.link{
+  transition: 0.5s;
+}
+.link:hover{
+  transform: scale(1.2);
+}
 
 .link a {
   padding: 5px;
@@ -115,6 +129,7 @@ a {
 
 .link a:hover {
   color: var(--primary-color);
+  
 }
 
 .nav__btns {
@@ -165,6 +180,7 @@ span {
 
 .header__image {
   grid-column: 3/5;
+  padding-right: 50px;
 }
 
 .header__image img {
@@ -209,12 +225,66 @@ span {
   font-size: 2.5rem;
   color: var(--text-dark);
 }
+/* count */
+/* ----- Cuenta Regresiva ----- */
+
+
+.contador{
+  opacity: 0.9;
+  padding: 20px;
+  background-color: var(--text-dark);
+  height: 400px;
+  text-align: center;
+  
+  
+}
+.contador h2{
+  color: var(--extra-light);
+}
+
+#cuenta {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.simply-section {
+  width: 200px;
+  height: 180px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.simply-amount {
+  color: var(--primary-color-dark);
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.simply-word {
+  color: var(--primary-color-dark);
+  font-weight: 100;
+  font-size: 20px;
+}
+
+
+/* ---------------------------- */
 
 /* proyect */
 
 .section_proy {
   padding: 2rem;
   background-color: var(--extra-light);
+}
+.text-center h2{
+  color: var(--secondary-color);
 }
 
 .card {
@@ -235,48 +305,7 @@ span {
 }
 
 
-/* count */
-/* ----- Cuenta Regresiva ----- */
 
-
-.contador{
-  background-color: var(--extra-light);
-  height: 300px;
-  text-align: center;
-  align-items: center;
-}
-#cuenta {
-  display: flex;
-  justify-content: center;
-  background-color: var(--secondary-color);
-  height: 100%;
-}
-
-.simply-section {
-  width: 200px;
-  height: 180px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.simply-amount {
-  color: var(--primary-color);
-  display: block;
-  font-size: 40px;
-  font-weight: 700;
-}
-
-.simply-word {
-  color: var(--primary-color);
-  font-weight: 100;
-  font-size: 20px;
-}
-
-
-/* ---------------------------- */
 
 /* Contact Section Styles */
 .contact__container {
@@ -315,7 +344,9 @@ span {
 }
 
 .contact__content textarea {
-  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-family);
 }
 
 .contact__content input::placeholder {
@@ -393,6 +424,11 @@ span {
   color: var(--white);
   text-align: center;
 }
+h2{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 
 /* Media Queries */
 @media (max-width: 1200px) {
