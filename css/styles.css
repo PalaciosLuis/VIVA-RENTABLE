@@ -281,6 +281,7 @@ span {
 
 .section_proy {
   padding: 2rem;
+  margin-top: 20px;
   background-color: var(--extra-light);
 }
 .text-center h2{
