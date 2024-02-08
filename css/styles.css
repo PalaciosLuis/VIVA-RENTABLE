@@ -477,6 +477,7 @@ h2{
   }
 }
 
+
 @media (max-width: 600px) {
   .project__container {
     grid-template-columns: 1fr;
@@ -503,3 +504,4 @@ h2{
     grid-template-columns: repeat(2, 1fr);
   }
 }
+

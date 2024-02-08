@@ -97,6 +97,20 @@ section {
     margin: auto;
 }
 
+@media only screen and (max-width: 600px) {
+  
+    #mc_embed_signup {
+        width: 100%;
+    }
+    .mc-field-group {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .optionalParent {
+        text-align: center;
+    }
+}
+
 textarea {
     width: 100%;
     padding: 10px;
