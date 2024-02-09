@@ -144,7 +144,10 @@ a {
   justify-content: flex-end;
   gap: 1rem;
 }
-
+h2{
+  font-size: 2rem;
+  font-weight: 600;
+}
 span {
   color: var(--color-icon);
 }
@@ -237,7 +240,7 @@ span {
 .contador{
   opacity: 0.9;
   padding: 20px;
-  background-color: var(--text-dark);
+  background-color: var(--primary-color);
   height: 400px;
   text-align: center;
   
@@ -245,6 +248,16 @@ span {
 }
 .contador h2{
   color: var(--extra-light);
+}
+.contador span{
+  color: var(--extra-light);
+
+}
+.contador button{
+  background-color: var(--primary-color-dark);
+}
+.contador button:hover{
+  background-color: var(--primary-color);
 }
 
 #cuenta {
@@ -314,16 +327,6 @@ span {
 }
 
 
-
-/* Contact Section Styles */
-/* .contact__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  align-items: center;
-} */
-
-
 .contact__image img {
   max-width: 450px;
   margin: auto;
@@ -376,6 +379,17 @@ span {
 .contact__container button:hover {
   background-color: var(--primary-color-dark);
 }
+#contact{
+  background-color: var(--extra-light);
+
+}
+#contact h2{
+  color: var(--secondary-color);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* Footer Styles */
 .footer {
@@ -433,10 +447,7 @@ span {
   color: var(--white);
   text-align: center;
 }
-h2{
-  font-size: 2rem;
-  font-weight: 600;
-}
+
 
 
 /* Media Queries */
