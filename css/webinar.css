@@ -1,0 +1,179 @@
+/* Estilos generales */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Onest:wght@300;400;600&family=Roboto+Slab&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f1f1;
+    font-family: "Onest", sans-serif;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #005E6C;
+}
+
+h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+h3 {
+    color: #333;
+
+}
+
+strong {
+    color: #00AE45;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+p {
+    font-size: 20px;
+    color: #666;
+}
+
+/* Encabezado */
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Secciones */
+
+section {
+    margin-bottom: 30px;
+}
+section img{
+
+    width: 100%;
+
+}
+
+/* Formulario de contacto */
+
+.contact__container {
+    display: flex;
+    align-items: center;
+}
+
+.contact__image {
+    flex: 0 0 50%;
+}
+
+.contact__image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact__content {
+    flex: 0 0 50%;
+    padding: 0 20px;
+}
+
+.section__header {
+    margin-bottom: 10px;
+}
+
+.section__subheader {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #mc_embed_signup {
+        width: 100%;
+    }
+
+    .mc-field-group {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .optionalParent {
+        text-align: center;
+    }
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Pie de página */
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+/* CHANCAY */
+video {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+
+}
+
+#playPauseButton {
+    background-color: #005E6C;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+
+}
+
+h3 {
+    color: #005E6C;
+}
