@@ -327,6 +327,7 @@ span {
   background-size: cover;
 }
 
+/* CONTACT */
 
 .contact__image img {
   max-width: 450px;
@@ -390,7 +391,7 @@ span {
   align-items: center;
   justify-content: center;
 }
-
+/* --------------------------- */
 
 /* Footer Styles */
 .footer {
