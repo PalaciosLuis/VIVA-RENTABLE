@@ -299,7 +299,6 @@ span {
 /* proyect */
 
 .section_proy {
-  display: grid;
   padding: 2rem;
   margin-top: 20px;
   background-color: var(--extra-light);
