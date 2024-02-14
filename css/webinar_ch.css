@@ -1,0 +1,16 @@
+/* CHANCAY */
+video {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+#playPauseButton {
+    background-color: #005E6C;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
