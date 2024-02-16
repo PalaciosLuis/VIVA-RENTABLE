@@ -1,3 +1,41 @@
+// Fecha y hora del webinar (Año, Mes (0-11), Día, Hora, Minuto, Segundo)
+const webinarDate = new Date(2024, 2, 1, 10, 0, 0); // 1 de Marzo de 2024 a las 10:00 AM
+
+// Función para actualizar el contador
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = webinarDate - now;
+
+  // Cálculos para días, horas, minutos y segundos
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Mostrar el contador en la página
+  document.getElementById("countdown").innerHTML = `
+           <div>${days} <br> días</div>
+           <div>${hours} <br> horas</div>
+           <div>${minutes} <br> minutos</div>
+           <div>${seconds} <br> segundos</div>
+       `;
+
+  // Si la cuenta regresiva ha terminado, mostrar un mensaje
+  if (distance < 0) {
+    clearInterval(timer);
+    document.getElementById("countdown").innerHTML = "¡El webinar ha comenzado!";
+  }
+}
+
+// Actualizar el contador cada segundo
+const timer = setInterval(updateCountdown, 1000);
+
+// Actualizar el contador de inmediato para evitar el retraso inicial
+updateCountdown();
+
+
+
+
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
@@ -62,3 +100,6 @@ const swiper = new Swiper(".swiper", {
   centeredSlides: true,
   spaceBetween: 30,
 });
+
+
+
