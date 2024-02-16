@@ -146,6 +146,11 @@ body {
     width: 500px;   
 
 }
+.main img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
 
 
 .card p{
@@ -237,6 +242,7 @@ body {
 
 /* ===================================================== */
 /* Formulario de contacto */
+
 .contact__container {
     display: flex;
     align-items: center;
@@ -250,9 +256,34 @@ body {
 }
 
 .container {
+    background-image: url('../assets/banner_img/b_001.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
     width: 700px;
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 100px;
+    border-radius: 20px;
+    background-size: cover;
+    color: #fff;
+}
+.container::before {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alfa para controlar la opacidad */
+}
+.container:hover{
+    background-image: url('../assets/banner_img/b_002.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .container h3 {
