@@ -34,6 +34,15 @@ const timer = setInterval(updateCountdown, 1000);
 updateCountdown();
 
 
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach(item => {
+    item.addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+});
+
+
 
 
 const scrollRevealOption = {
