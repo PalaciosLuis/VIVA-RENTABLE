@@ -651,6 +651,7 @@ a {
     }
 
     .article1 h3 {
+        width: 80%;
         font-size: 10px;
         
     }
@@ -688,9 +689,16 @@ a {
     }
 
 
+
     .section_5 h2 {
+        width: 90%;
         font-size: 25px;
+        
+    }
+    .fecha {
+        width: 80%;
         padding: 20px;
+        
     }
 
     /* Formulario de contacto */
@@ -730,6 +738,11 @@ a {
     }
     .accordion-content{
         font-size: 30px;
+    }
+    .maduracion_check{
+        font-size: 20px;
+        padding: 40px;
+
     }
 
     .section_8{
