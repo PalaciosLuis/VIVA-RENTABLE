@@ -45,21 +45,19 @@ body {
     background-color: rgba(10, 10, 21, 0.749);
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .text_content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 100px;
-    padding-top: 100px;
+    text-align: center;
+
 }
 
 
 .text_content h1 {
     padding: 0;
     margin: 0;
-    font-size: 60px;
+    font-size: 80px;
     color: #fff;
 }
 
@@ -70,9 +68,10 @@ body {
 }
 
 .logo {
-    justify-content: start;
     width: 180px;
-    height: auto;
+    margin-bottom: 20px;
+
+
 
 }
 

@@ -45,21 +45,21 @@ body {
     background-color: rgba(10, 10, 21, 0.749);
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .text_content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 100px;
-    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
 .text_content h1 {
     padding: 0;
     margin: 0;
-    font-size: 60px;
+    font-size: 75px;
     color: #fff;
 }
 
@@ -70,9 +70,8 @@ body {
 }
 
 .logo {
-    justify-content: start;
     width: 180px;
-    height: auto;
+
 
 }
 
@@ -334,7 +333,7 @@ body {
 .article1 {
     position: relative;
     width: 100%;
-    
+
     background-image: url('../assets/section.jpg');
     background-size: cover;
 }
@@ -357,14 +356,14 @@ body {
     /* Color de texto blanco */
     text-align: center;
     padding: 40px;
-    font-size: 38px;
+    font-size: 35px;
 }
 
 .article2 {
     position: relative;
     width: 100%;
     height: 250px;
-    background-image: url('../assets/vertical.jpg');
+    background-image: url('../assets/banner_img/camara_02.png');
     background-size: cover;
 }
 
@@ -386,13 +385,13 @@ body {
     /* Color de texto blanco */
     text-align: center;
     padding: 40px;
-    font-size: 38px;
+    font-size: 35px;
 }
 
 .article3 {
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 160px;
     background-image: url('../assets/im002.jpeg');
     background-size: cover;
 }
@@ -415,22 +414,23 @@ body {
     /* Color de texto blanco */
     text-align: center;
     padding: 40px;
-    font-size: 38px;
+    font-size: 30px;
 }
 
 .section_5 {
     width: 100%;
-    height: 180px;
+
     background-color: #000000e9;
 }
 
 .section_5 h2 {
     padding: 10px;
-
     text-transform: uppercase;
     color: #fff;
     text-align: center;
-    font-size: 50px;
+    padding-top: 20px;
+    margin: auto;
+    font-size: 40px;
 
 }
 
@@ -550,7 +550,7 @@ body {
 
 .section_8 {
     width: 100%;
-    height: 150px;
+    height: 130px;
     background-color: #00AE45;
 }
 
@@ -867,12 +867,6 @@ a {
         font-size: 30px;
     }
 
-    .maduracion_check {
-        font-size: 20px;
-        padding: 40px;
-
-    }
-
     .section_8 {
         width: 100%;
         height: 230px;
@@ -921,7 +915,7 @@ a {
     color: #000;
     position: absolute;
 
-    
+
     right: 10px;
     cursor: pointer;
     font-size: 50px;
