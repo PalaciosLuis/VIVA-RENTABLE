@@ -368,6 +368,18 @@ body {
     background-size: cover;
 }
 
+.section_6 {
+    width: 1000px;
+    font-size: 32px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.section_6 p{
+    padding-bottom: 20px;
+}
+
+
 .article2::before {
     content: "";
     position: absolute;
@@ -435,13 +447,6 @@ body {
 
 }
 
-.section_6 {
-    width: 1000px;
-    font-size: 30px;
-    margin: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
 
 
 
