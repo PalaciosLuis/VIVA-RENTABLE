@@ -86,17 +86,17 @@ body {
 
     26%,
     50% {
-        background-image: url('../assets/im002.jpeg');
+        background-image: url('../assets/banner_img/camara_01.png');
     }
 
     51%,
     75% {
-        background-image: url('../assets/im003.jpeg');
+        background-image: url('../assets/banner_img/camara_02.png');
     }
 
     76%,
     100% {
-        background-image: url('../assets/banner_img/b_001.jpg');
+        background-image: url('../assets/banner_img/camara_03.png');
     }
 }
 
@@ -153,7 +153,7 @@ body {
 
     margin: auto;
     max-width: 1200px;
-    padding: 50px;
+    padding: 30px;
     place-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -163,7 +163,7 @@ body {
 .card img {
     border: 10px solid #00AE45;
     object-fit: cover;
-    height: 400px;
+    height: 300px;
     width: 500px;
 
 }
@@ -478,7 +478,7 @@ body {
 }
 
 .container:hover {
-    background-image: url('../assets/banner_img/b_002.jpg');
+    background-image: url('../assets/banner_img/b_003.jpg');
     background-size: cover;
     background-position: center;
     transition: all 0.5s ease-in-out;

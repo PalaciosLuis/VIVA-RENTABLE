@@ -2,15 +2,15 @@
 //=============================================
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-        document.getElementById('popup').style.display = 'block';
-    }, 10000); // Muestra el popup después de 10 segundos (10000 milisegundos)
-  });
+// document.addEventListener("DOMContentLoaded", function() {
+//     setTimeout(function() {
+//         document.getElementById('popup').style.display = 'block';
+//     }, 40000); // Muestra el popup después de 10 segundos (10000 milisegundos)
+//   });
   
-  function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-  }
+//   function closePopup() {
+//     document.getElementById('popup').style.display = 'none';
+//   }
   
   
   document.addEventListener("DOMContentLoaded", function() {
