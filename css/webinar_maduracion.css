@@ -436,22 +436,28 @@ body {
 }
 
 .section_6 {
-    width: 100%;
-    height: 400px;
+    width: 1000px;
     font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 100px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .maduracion_check {
 
-    width: 1000px;
-    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+
 }
 
+.maduracion_check div {
+    width: 100%;
+
+
+}
 
 
 
@@ -835,18 +841,14 @@ a {
 
     }
 
-    .maduracion_check {
-        width: 100%;    
-        font-size: 18px;
-        display: flex;
-        flex-direction: column;
+    .section_6 {
+        width: 100%;
+        font-size: 15px;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
-    .maduracion_check div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10px;  
-    }
+
 
 
     .article3 {
