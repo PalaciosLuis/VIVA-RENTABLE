@@ -368,14 +368,19 @@ body {
     background-size: cover;
 }
 
-.section_6 {
-    width: 1000px;
+.section_06 {
+    width: 100%;
     font-size: 32px;
     margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
-.section_6 p{
+.maduracion_check {
+    width: 1000px;
+}
+.maduracion_check p{
     padding-bottom: 20px;
 }
 
