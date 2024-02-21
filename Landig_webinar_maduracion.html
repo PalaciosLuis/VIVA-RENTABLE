@@ -242,23 +242,35 @@
     #countdown div {
         margin: auto;
         text-align: center;
-        ;
         color: #005E6C;
         font-weight: 800;
         font-size: 65px;
         min-width: 90px;
+        padding-top: 20px;
     }
 
     .count {
         margin: auto;
         text-align: center;
-        ;
         color: #005E6C;
         font-weight: 500;
         font-size: 65px;
         min-width: 90px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+    .countmb{
+        margin: auto;
+        text-align: center;
+        color: #005E6C;
+        font-weight: 500;
+        font-size: 65px;
+        min-width: 90px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .countmb p{
+        opacity: 0;
     }
 
     .contador div p {
@@ -533,6 +545,7 @@
     }
 
     .popup-content {
+       
         text-align: center;
     }
 
@@ -545,9 +558,6 @@
         right: 10px;
         cursor: pointer;
         font-size: 50px;
-    }
-    .countmb p{
-        display: none;
     }
 
     @media only screen and (max-width: 600px) {
@@ -655,21 +665,16 @@
             min-width: 20px;
         }
 
-        .count {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
+        
 
         .countmb p{
-        
+            opacity: 1;
             font-weight: 900;
             font-size: 10px;
             min-width: 10px;
         }
         .count p {
+            display: none;
             font-weight: 900;
             font-size: 10px;
             min-width: 10px;
@@ -694,10 +699,13 @@
             padding-top: 50px;
 
         }
+        .s03 h2{
+            font-size: 25px;
+        }
 
         .s03 p {
             width: 80%;
-            font-size: 30px;
+            font-size: 20px;
         }
 
         /* Formulario de contacto */
@@ -761,14 +769,17 @@
         .footer__bar {
             font-size: 16px;
         }
-
-        .popup-content {
-            display: flex;
-            height: 400px;
-            flex-direction: column;
-            justify-content: space-between;
+        
+        .popup{
+            margin: auto;
+            width: 300px;
+            height: 100%;
         }
-
+        .popup-content{
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
         .close {
             width: 30px;
             color: #000;
@@ -849,13 +860,19 @@
             <p>Minutos</p>
             <p>Segundos</p>
         </div>
+        <div class="countmb">
+            <p>D</p>
+            <p>H</p>
+            <p>M</p>
+            <p>S</p>
+        </div>
         <h3>PARA NUESTRO WEBINAR EXCLUSIVO</h3>
     </article>
 
     <!-- MAILCHIMP -->
     <section class="seccion_03">
         <div class="s03">
-            <h2>¡REGISTRATE AHORA PARA NUESTRO WEBINAR EXCLUSIVO!</h2>
+            <h2>¡REGISTRATE AHORA  <br> PARA NUESTRO WEBINAR EXCLUSIVO!</h2>
             <p>Y DESCUBRE COMO EL NEGOCIO DEL BANANO PUEDE TRANSFORMAR TU VIDA FINANCIERA</p>
         </div>
         <section class="container section_div" id="contacto">
