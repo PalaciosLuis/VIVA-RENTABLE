@@ -14,10 +14,10 @@ function updateCountdown() {
 
   // Mostrar el contador en la página
   document.getElementById("countdown").innerHTML = `
-           <div>${days} <br> días</div>
-           <div>${hours} <br> horas</div>
-           <div>${minutes} <br> minutos</div>
-           <div>${seconds} <br> segundos</div>
+           <div>${days} </div>
+           <div>${hours} </div>
+           <div>${minutes} </div>
+           <div>${seconds} </div>
        `;
 
   // Si la cuenta regresiva ha terminado, mostrar un mensaje
