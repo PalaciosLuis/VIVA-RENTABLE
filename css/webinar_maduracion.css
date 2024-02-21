@@ -499,9 +499,8 @@ a {
 }
 
 /* Responsiveness */
-
+/* Media Query para pantallas con un ancho máximo de 600px */
 @media only screen and (max-width: 600px) {
-
     /* BANNER */
     .banner {
         height: 70vh;
@@ -511,28 +510,23 @@ a {
         padding: 20px;
         grid-template-columns: 1fr;
         justify-items: center;
-        /* Centrar los elementos en dispositivos móviles */
+        text-align: center; /* Centra los elementos en dispositivos móviles */
     }
 
     .text_content h1 {
-
         font-size: 40px;
-        /* Centrar el texto en dispositivos móviles */
     }
 
     .text_content h2 {
         font-size: 20px;
-        /* Centrar el texto en dispositivos móviles */
-        margin-bottom: 20px;
-        /* Reducir el espacio entre elementos en dispositivos móviles */
+        margin-bottom: 20px; /* Reduce el espacio entre elementos en dispositivos móviles */
     }
 
     .logo {
-        width: 120px;
-        /* Reducir el tamaño del logo en dispositivos móviles */
+        width: 120px; /* Reduce el tamaño del logo en dispositivos móviles */
     }
 
-    /* ------- */
+    /* Seccion 01 */
     .seccion_01 {
         width: 100%;
         display: flex;
@@ -543,7 +537,6 @@ a {
     .s01_container {
         display: flex;
         flex-direction: column;
-
     }
 
     .s01_container img {
@@ -575,7 +568,8 @@ a {
         margin-top: 0;
         text-align: center;
     }
-    .s02_texto p{
+
+    .s02_texto p {
         font-size: 25px;
     }
 
@@ -585,19 +579,14 @@ a {
         object-fit: cover;
     }
 
-
-
-    /* count */
-
+    /* Contador */
     .contador {
-
         font-size: 10px;
         width: 100vw;
         height: 100%;
     }
 
     #countdown {
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -613,23 +602,22 @@ a {
         min-width: 20px;
     }
 
+    /* Seccion 03 */
     .seccion_03 {
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
 
-    }
-    .s03{
+    .s03 {
         padding-top: 50px;
-        width: 80%
+        width: 80%;
     }
-    .s03 p{
+
+    .s03 p {
         width: 80%;
         font-size: 30px;
     }
-
-
-
 
     /* Formulario de contacto */
     .container {
@@ -644,6 +632,7 @@ a {
         font-size: 20px;
     }
 
+    /* Seccion 04 */
     .seccion_04 {
         width: 100%;
         height: 100%;
@@ -651,7 +640,6 @@ a {
 
     .superior {
         display: none;
-
     }
 
     .inferior {
@@ -662,17 +650,13 @@ a {
 
     .cont1 h2 {
         padding-left: 0;
-
     }
+
+    /* Seccion 05 */
     .seccion_05 {
         width: 100%;
         height: 300px;
-
     }
-
-    /* Info */
-
-
 
     /* Footer Styles */
     .footer__container {
@@ -706,13 +690,12 @@ a {
         width: 30px;
         color: #000;
         position: absolute;
-
-
         right: 10px;
         cursor: pointer;
         font-size: 50px;
         z-index: 1;
     }
-
-
 }
+
+
+
