@@ -251,7 +251,6 @@
     .count {
         margin: auto;
         text-align: center;
-        ;
         color: #005E6C;
         font-weight: 500;
         font-size: 65px;
@@ -270,6 +269,28 @@
         font-size: 40px;
         margin-top: 30px;
         margin-bottom: 20px;
+        font-weight: 800;
+
+    }
+
+    .countmb {
+        display: none;
+        text-align: center;
+        color: #005E6C;
+        font-weight: 500;
+
+        min-width: 90px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .countmb p {
+        display: none;
+        color: #005E6C;
+        text-align: center;
+        font-size: 40px;
+
         font-weight: 800;
 
     }
@@ -545,9 +566,7 @@
         cursor: pointer;
         font-size: 50px;
     }
-    .countmb p{
-        display: none;
-    }
+
 
     @media only screen and (max-width: 600px) {
 
@@ -662,18 +681,16 @@
         }
 
 
-        .countmb p{
-        
-            font-weight: 900;
-            font-size: 10px;
-            min-width: 10px;
-        }
-        .count p {
-            font-weight: 900;
-            font-size: 10px;
-            min-width: 10px;
+        .countmb p {
+            display: block;
 
-            /* Tamaño de las etiquetas de días, horas, minutos y segundos */
+
+
+        }
+
+        .count p {
+            display: none;
+
         }
 
 
@@ -848,7 +865,12 @@
             <p>Minutos</p>
             <p>Segundos</p>
         </div>
-        
+        <div class="countmb">
+            <p>D</p>
+            <p>H</p>
+            <p>m</p>
+            <p>s</p>
+        </div>
         <h3>PARA NUESTRO WEBINAR EXCLUSIVO</h3>
     </article>
 
