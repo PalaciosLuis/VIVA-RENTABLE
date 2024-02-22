@@ -1,5 +1,4 @@
 
-
 function imagen3d(id) {
 const el = document.getElementById(id);
 const heigth = el.clientHeight;
@@ -36,9 +35,18 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     document.getElementById('popup').style.display = 'block';
   }, 60000); // Muestra el popup después de 10 segundos (10000 milisegundos)
+
+  // Agregar event listener para el botón de cerrar el popup
+  var closeButton = document.getElementById('closeButton');
+  closeButton.addEventListener('click', closePopup);
+
 });
 
 function closePopup() {
   document.getElementById('popup').style.display = 'none';
 }
+
+
+
 //=======================================================
+
