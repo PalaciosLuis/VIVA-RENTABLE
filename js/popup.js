@@ -1,46 +1,44 @@
 
-//========= ANIMACIONES ===============
 
-// function animation(id,anima){
-//   window.addEventListener('scroll', function() {
-//     var elemento = document.getElementById(id);
-//     var posicion = elemento.getBoundingClientRect().top;
-//     var alturaDeLaPantalla = window.innerHeight;
-  
-//     // Si el elemento está más abajo de la mitad de la pantalla
-//     if (posicion < alturaDeLaPantalla / 1.4) {
-//         elemento.classList.add(anima);
-//     } else {
-//         elemento.classList.remove(anima);
-//     }
-//   });
+function imagen3d(id) {
+const el = document.getElementById(id);
+const heigth = el.clientHeight;
+const width = el.clientWidth;
 
-// }
-// animation('elemento','wobble-vertical-right')
-// animation('elemento1','wobble-vertical-right')
-// animation('letras','blur-in')
+el.addEventListener('mousemove', (evt) => {
+  const { layerX, layerY } = evt;
 
+  const yRotation = (
+    (layerX - width / 2) / width
+  ) * 20
 
+  const xRotation = (
+    (layerY - heigth / 2) / heigth
+  ) * 20
 
-// animation('elemento2','scale-up-horizontal-left')
-// animation('elemento3','scale-up-horizontal-right')
-// animation('elemento4','shake-left-right')
-// animation('elemento6','scale-up-horizontal-left')
+  const string = `perspective(1000px) rotateX(${-xRotation}deg) rotateY(${yRotation}deg)`;
+  el.style.transform = string;
+});
 
+el.addEventListener('mouseleave', () => {
+  el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)';
+});
 
+}
 
-
+imagen3d('poster');
+imagen3d('poster1');
 
 
 //================POPUP=============================
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-        document.getElementById('popup').style.display = 'block';
-    }, 60000); // Muestra el popup después de 10 segundos (10000 milisegundos)
-  });
-  
-  function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-  }
-  //=======================================================
+
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    document.getElementById('popup').style.display = 'block';
+  }, 60000); // Muestra el popup después de 10 segundos (10000 milisegundos)
+});
+
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+//=======================================================

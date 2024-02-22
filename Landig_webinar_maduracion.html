@@ -156,26 +156,52 @@
         gap: 40px;
     }
 
-    .img_s1 img {
+    /* .img_s1 img {
 
         margin: auto;
-        width: 400px;
+        width: 600px;
         height: 300px;
         object-fit: cover;
-    }
+    } */
 
     .p_s1 {
-        width: 90%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        width: 80%;
         margin: auto;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        font-size: 23px;
+        font-size: 20px;
         color: #005E6C;
-        font-weight: 600;
+        font-weight: 700;
 
     }
 
+    #poster {
+        width: 600px;
+        height: 300px;
+        transition: box-shadow .1s, tansform .1s;
+        background: url("../assets/banner_img/camara_01.png"),
+            no-repeat center;
+        background-size: cover;
+    }
+
+    #poster:hover {
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #poster1 {
+        width: 600px;
+        height: 300px;
+        transition: box-shadow .1s, tansform .1s;
+        background: url("../assets/banner_img/camara_04.png"),
+            no-repeat center;
+        background-size: cover;
+    }
+
+    #poster1:hover {
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    }
 
 
     /* ---------- */
@@ -193,7 +219,7 @@
 
         width: 100%;
         object-fit: cover;
-        height: 400px;
+        height: 450px;
     }
 
 
@@ -208,19 +234,21 @@
     .s02_texto h2 {
 
         font-size: 40px;
-        margin-bottom: 20px;
+
     }
 
     .s02_texto p {
 
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: 24px;
 
     }
 
     /* count */
     .contador {
-        margin-top: 20px;
+
+        width: 1000px;
+        margin: auto;
         background-color: #fff;
     }
 
@@ -228,6 +256,7 @@
         color: #005E6C;
         text-align: center;
         font-size: 35px;
+        font-weight: 500;
 
 
     }
@@ -240,22 +269,23 @@
     }
 
     #countdown div {
+        height: 100px;
         margin: auto;
         text-align: center;
         color: #005E6C;
-        font-weight: 800;
-        font-size: 65px;
+        font-weight: 700;
+        font-size: 90px;
         min-width: 90px;
-        padding-top: 20px;
+
     }
 
     .count {
+        padding-right: 10px;
         margin: auto;
         text-align: center;
         color: #005E6C;
         font-weight: 500;
         font-size: 65px;
-        min-width: 90px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
@@ -310,15 +340,16 @@
     .s03 h2 {
 
         color: #fff;
-        font-size: 35px;
+        font-size: 30px;
         margin-bottom: 20px;
     }
 
     .s03 p {
 
         color: #fff;
-        font-size: 25px;
+        font-size: 28px;
         margin-bottom: 20px;
+        font-weight: 300;
     }
 
     /* --------------- */
@@ -333,7 +364,9 @@
     }
 
     .superior {
-        padding: 30px;
+
+        padding-top: 30px;
+        padding-bottom: 50px;
         margin: auto;
         width: 1000px;
         display: flex;
@@ -376,13 +409,13 @@
     }
 
     .cont1 {
-        padding: 20px;
+        padding: 30px;
         margin: auto;
     }
 
     .cont1 h2 {
 
-        padding-left: 100px;
+        padding-left: 80px;
         color: #00AE45;
         font-size: 50px;
 
@@ -391,10 +424,11 @@
 
     .cont1 p {
 
+        width: 80%;
         color: #005E6C;
         font-size: 20px;
         margin-bottom: 20px;
-        font-weight: 500;
+        font-weight: 700;
     }
 
 
@@ -440,7 +474,7 @@
 
 
     #mc_embed_shell h4 {
-        font-size: 30px;
+        font-size: 15px;
         margin: 0;
         padding: 0;
         text-align: center;
@@ -451,7 +485,7 @@
         background-position: center;
         position: relative;
         width: 100%;
-        height: 500px;
+        height: 400px;
         text-align: center;
         background-image: url('../assets/im001.jpeg');
         background-size: cover;
@@ -465,7 +499,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(28, 95, 53, 0.264);
+        background-color: rgba(28, 95, 53, 0.393);
         /* Ajusta el valor alfa para controlar la opacidad */
     }
 
@@ -534,8 +568,8 @@
     }
 
     .logo_negativo {
-        width: 300px;
-        height: 150px;
+        width: 200px;
+        height: 100px;
     }
 
     .popup {
@@ -613,10 +647,14 @@
             justify-content: center;
         }
 
-        .img_s1 img {
+        #poster {
             width: 100%;
-            height: 300px;
-            object-fit: cover;
+
+        }
+
+        #poster1 {
+            width: 100%;
+
         }
 
         .p_s1 {
@@ -637,11 +675,15 @@
             width: 80%;
             margin-left: 0;
             margin-top: 0;
-            text-align: center;
+
+        }
+
+        .s02_texto h2 {
+            font-size: 30px;
         }
 
         .s02_texto p {
-            font-size: 25px;
+            font-size: 20px;
         }
 
         .seccion_02 img {
@@ -657,6 +699,7 @@
         }
 
         #countdown {
+            height: 90px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -733,6 +776,7 @@
 
         /* Seccion 04 */
         .seccion_04 {
+            background: none;
             width: 100%;
             height: 100%;
         }
@@ -744,14 +788,19 @@
         .inferior {
             display: flex;
             flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
+            width: 100%;
+
         }
 
         .cont1 h2 {
             padding-left: 0;
+            font-size: 50px;
         }
+
+        .cont1 {
+            width: 100%;
+        }
+
 
         /* Seccion 05 */
         .seccion_05 {
@@ -809,6 +858,7 @@
     }
 </style>
 
+
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSWPS2CX" height="0" width="0"
@@ -840,8 +890,14 @@
 
     <section class="seccion_01">
         <div class="img_s1">
-            <img src="./assets/banner_img/camara_01.png" alt="">
-            <img src="./assets/banner_img/camara_04.png" alt="">
+            <div id="poster">
+
+            </div>
+
+            <div id="poster1">
+
+            </div>
+
 
         </div>
         <div class="p_s1">
@@ -859,7 +915,7 @@
 
     <section class="seccion_02">
         <div class="s02_texto">
-            <h2>INVERTIR BIEN Y CON VISIÓN ES:</h2>
+            <h2>INVERTIR BIEN Y <br> CON VISIÓN ES:</h2>
             <p>invertir en las necesidades de un sector que crece de manera acelerada y que aun pocos inversionistas lo
                 hacen</p>
 
@@ -904,7 +960,7 @@
                             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
                             class="validate" target="_blank">
                             <div id="mc_embed_signup_scroll" class="animate-bg">
-                                <h4>Suscríbete</h4>
+                                <h4>¡Descubre cómo hacerlo en nuestro webinar exclusivo!.</h4>
                                 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
                                 <div class="mc-field-group"><label for="mce-EMAIL">Dirección de correo electrónico <span
                                             class="asterisk">*</span></label><input type="email" name="EMAIL"
