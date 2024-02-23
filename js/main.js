@@ -1,5 +1,5 @@
 // Fecha y hora del webinar (Año, Mes (0-11), Día, Hora, Minuto, Segundo)
-const webinarDate = new Date(2024, 2, 1, 10, 0, 0); // 1 de Marzo de 2024 a las 10:00 AM
+const webinarDate = new Date(2024, 2, 6, 19, 0, 0); // 1 de Marzo de 2024 a las 10:00 AM
 
 // Función para actualizar el contador
 function updateCountdown() {
