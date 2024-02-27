@@ -44,7 +44,7 @@
         </div>
         <div class="contenedor_s2">
             <div class="contenedor_logo">
-                <img  src="./assets/icono-de-joya-natural.png" alt="">
+                <img src="./assets/icono-de-joya-natural.png" alt="">
                 <p>Iquitos, la capital de la región Loreto, se alza como una joya natural escondida en el corazón del
                     Amazonas peruano.
                 </p>
@@ -56,7 +56,7 @@
 
             </div>
             <div class="contenedor_logo">
-                <img  src="./assets/icono-de-inversionistas.png" alt="">
+                <img src="./assets/icono-de-inversionistas.png" alt="">
                 <p>Iquitos se presenta como una oportunidad única para los inversionistas visionarios que buscan ser
                     parte del desarrollo de una ciudad con un futuro radiante.</p>
 
@@ -64,6 +64,7 @@
         </div>
 
     </section>
+    <img src="./assets/hoja.png" alt="" class="hoja">
 
     <section class="seccion_03">
         <h2>Iquitos: Un Destino Turístico en Auge <br> <span class="span_s3">
@@ -75,18 +76,36 @@
 
     <section class="seccion_04">
         <div class="card uno">
-            <p>Biodiversidad <br> sin igual</p>
+            <div class="front">
+                <p>Biodiversidad <br> sin igual</p>
+            </div>
+            <div class="back">
+                <p>Hogar del Río Amazonas, el pulmón verde del planeta, Iquitos ofrece una experiencia única para los
+                    amantes de la naturaleza. Desde avistamiento de aves y pesca deportiva hasta excursiones por la
+                    selva y visitas a comunidades indígenas, Iquitos tiene algo para todos.</p>
+            </div>
         </div>
         <div class="card dos">
-            <p>Cultura <br> vibrante</p>
+            <div class="front">
+                <p>Cultura <br> vibrante</p>
+            </div>
+            <div class="back">
+                <p>La ciudad de Iquitos emana una energía contagiosa. Su rica cultura se refleja en sus tradiciones
+                    ancestrales, su música folclórica y su deliciosa gastronomía..</p>
+            </div>
         </div>
         <div class="card tres">
-            <p>El turismo en Iquitos ha experimentado un crecimiento sostenido en los últimos años, impulsado por la
-                promoción internacional y la mejora de la infraestructura. Se espera que esta tendencia continúe en el
-                futuro, lo que representa una gran oportunidad para los inversores inmobiliarios</p>
+            <div class="front">
+                <p>Crecimiento exponencial</p>
+            </div>
+            <div class="back">
+                <p>El turismo en Iquitos ha experimentado un crecimiento sostenido en los últimos años, impulsado por la
+                    promoción internacional y la mejora de la infraestructura. Se espera que esta tendencia continúe en
+                    el futuro, lo que representa una gran oportunidad para los inversores inmobiliarios.</p>
+            </div>
         </div>
-
     </section>
+
 
     <section class="seccion_05">
         <h2>Invierte en Iquitos y Sé <br> Parte de su Crecimiento</h2>
@@ -104,7 +123,7 @@
 
 
     </section>
-
+    <img src="./assets/hoja.png" alt="" class="hoja2">
 
     <section class="seccion_07">
         <div class="primero07">
@@ -159,10 +178,10 @@
     </section>
     <div class="linea04"></div>
 
-<!-- mailchimp -->
-    <section class="seccion_09" id="contacto"> 
+    <!-- mailchimp -->
+    <section class="seccion_09" id="contacto">
         <div class="s03">
-            <h2>Regístrate Ahora para Asegurar tu Lugar en Nuestro Webinar Exclusivo</h2>
+            <h2>Regístrate ahora para asegurar tu lugar en nuestro Webinar Exclusivo</h2>
             <p>Descubre cómo puedes convertirte en parte del desarrollo de Iquitos y obtener una rentabilidad
                 excepcional para tu inversión.</p>
         </div>
@@ -225,7 +244,7 @@
         </section>
 
     </section>
-<!-- -------------------- -->
+    <!-- -------------------- -->
 
     <section class="seccion_10">
         <div class="superior10">
@@ -316,5 +335,13 @@
 
 
 </body>
+<script>
+    document.querySelectorAll('.card').forEach(function (card) {
+        card.addEventListener('click', function () {
+            card.classList.toggle('flipped');
+        });
+    });
+
+</script>
 
 </html>
