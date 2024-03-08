@@ -30,501 +30,7 @@
 
 
 <body>
-  <style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-}
 
-ul {
-    list-style: none;
-}
-
-header {
-    height: 100vh;
-    background-color: #005E6D;
-}
-
-nav {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    align-items: center;
-    padding: 1.5rem 2rem;
-
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-nav a:hover {
-    color: #00AE44;
-    transition: 0.3s;
-
-}
-
-nav ul {
-
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 2rem;
-}
-
-
-nav img {
-
-    width: 160px;
-    height: 80px;
-    margin-left: 30px;
-}
-
-.banner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.b01 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 450px;
-    ;
-    padding-left: 5rem;
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-.b01 a {
-    margin-top: 10px;
-    text-align: center;
-    width: 220px;
-    color: #f2f2f2;
-    text-decoration: none;
-    padding: 10px;
-    background-color: #00AE44;
-    font-weight: 500;
-    border-radius: 10px;
-
-}
-
-.b01 a:hover {
-    background-color: #f2f2f2;
-    color: #00AE44;
-    transition: 0.3s;
-}
-
-
-.b02 {
-    width: 100%;
-    height: 450px;
-
-}
-
-.b02 img {
-
-    width: 400px;
-    height: 450px;
-    object-fit: cover;
-    margin: 0 0 0 8vw;
-
-}
-
-
-/* acrds */
-
-.seccion_02 {
-    width: 100%;
-    height: 100vh;
-}
-
-.seccion_02 h2 {
-
-    margin-top: 80px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 2rem;
-    color: #00AE44;
-    font-weight: 800;
-
-}
-
-.cards {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card {
-    width: 370px;
-    height: 420px;
-    margin: 0 10px;
-    perspective: 1000px;
-    border-radius: 10px;
-}
-
-.card .front,
-.card .back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-}
-
-.card .front {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.5s;
-}
-
-.card .back {
-    display: none;
-    padding: 20px;
-    transform: rotateY(180deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.5s;
-}
-
-.card.flipped .front {
-
-    transform: rotateY(-180deg);
-}
-
-.card.flipped .back {
-    transform: rotateY(0deg);
-    display: flex;
-}
-
-.card p {
-    width: 80%;
-    text-align: center;
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
-    position: relative;
-}
-
-.card .title {
-    font-size: 24px;
-    font-weight: 600;
-    width: 50%;
-
-}
-
-.uno {
-    background-color: #00AE44;
-    background-size: cover;
-    position: relative;
-
-}
-
-
-.dos {
-    background-color: #0BCDD6;
-    position: relative;
-    background-size: cover;
-
-}
-
-
-.tres {
-    background-color: #005E6D;
-    position: relative;
-    background-size: cover;
-
-}
-
-.front .link {
-    margin-top: 30PX;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.front .link:hover {
-    cursor: pointer;
-
-}
-
-
-/* SECCION 03 */
-.seccion_03 {
-    background-image: url("../assets/nuevo/fondos3.png");
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns:60% 40%;
-    background-size: cover;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-.seccion_03::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(57, 90, 50, 0.73);
-    z-index: -1;
-
-}
-
-.textos3 {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5rem;
-
-}
-
-.textos3 p {
-    font-size: 1.5rem;
-    color: #f2f2f2;
-    font-weight: 600;
-    margin-bottom: 20px;
-    z-index: 2;
-}
-
-.calendario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    z-index: 2;
-}
-
-/* seccion 4 */
-.seccion_04{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.seccion_04 h2{
-    margin-top: 30px;
-    font-size: 2rem;
-    color: #00AE44;
-    font-weight: 800;
-    margin-bottom: 50px;
-}
-
-.grid-s4{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 1000px;
-    height: 100%;
-}
-
-.grid-s4 .numero{
-font-size: 30px;
-color: #00AE44;
-font-weight: 800;
-
-
-}
-
-.grid-s4 h4{
-    font-size: 20px;
-    color: #059298;
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-.grid-s4 p{
-    width: 80%;
-    font-size: 18px;
-    color: #005E6D;
-    font-weight: 500;
-    margin-top: 10px;
-}
-
-/* SECCION05 */
-
-.seccion_05{
-    width: 100%;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-image: url("../assets/nuevo/fondos5.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.seccion_05 div{
-    margin:  auto 20px;
-}
-
-.divp{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    padding: 0 5rem;
-
-}
-
-.seccion_05 p{
-    text-align: end;
-    width: 80%;
-    font-size: 1.9rem;
-    color: #00AE44;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-.seccion_05 span{
-    font-size: 2rem;
-    color: #00AE44;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-    /* Formulario de contacto */
-
-
-    .animate-bg {
-        margin-left: 20px;
-    }
-
-    .container {
-padding-top: 10px;
-        width: 680px;
-        height: 380px;
-        background-color: #fff;
-    }
-
-
-    #mc_embed_shell h2{
-        font-size: 15px;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-
-/* seccion 6 */
-.seccion_06{
-    
-    width: 100%;
-    height: 60vh;
-    display: grid;
-    grid-template-columns: 30% 5% 30% 5% 30%;
-}
-.seccion_06 div{
-    text-align: center;
-    margin: auto;
-}
-
-.seccion_06 h4{
-    font-size: 1.5rem;
-    color: #005E6D;
-    font-weight: 800;
-    margin-bottom: 20px;
-
-}
-.seccion_06 p{
-    font-size: 3rem;
-    color: #00AE44;
-    font-weight: 900;
-    margin-bottom: 20px;
-
-}
-
-.seccion_06 span{
-    margin: auto;
-    width: 10px;
-    height: 180px;
-    background-color: #00AE44;
-    
-}
-
-      /* Footer Styles */
-      .footer {
-        background-color: #005E6C;
-    }
-
-    .footer__container {
-        padding-top: 20px;
-        padding-left: 100px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    .footer__col h4 {
-        margin-bottom: 1.5rem;
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: white
-    }
-
-    .footer__col p {
-        margin-bottom: 1rem;
-        color: white;
-    }
-
-    .footer__col a {
-        display: block;
-        margin-bottom: 1rem;
-        color: white;
-        transition: 0.3s;
-    }
-
-    .footer__col a span {
-        margin-right: 5px;
-    }
-
-    .footer__col a:hover {
-        color: #00AE45;
-    }
-
-    .footer__socials {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .footer__socials span {
-        font-size: 1.5rem;
-        color: white;
-        cursor: pointer;
-    }
-
-    .footer__bar {
-        padding: 1rem;
-        font-size: 0.9rem;
-        color: white;
-        text-align: center;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .logo_negativo {
-        width: 200px;
-        height: 100px;
-    }
-
-
-  </style>
   <header>
     <nav>
       <img src="./assets/logo_negativo.png" alt="logo">
@@ -618,13 +124,14 @@ padding-top: 10px;
 
   <section class="seccion_03">
     <div class="textos3">
-      <p>Agenda tu cita ahora con uno de nuestros expertos para conocer a profundidad las oportunidades de inversión</p>
+      <p><span>Agenda tu cita ahora</span> con uno de nuestros expertos para conocer a profundidad las oportunidades de
+        inversión</p>
     </div>
+
     <div class="calendario">
+
       <!-- Principio del widget integrado de Calendly -->
-      <div class="calendly-inline-widget"
-        data-url="https://calendly.com/vive-rentable/reunion-de-inversion?hide_event_type_details=1"
-        style="min-width:420px;height:500px;"></div>
+      <div class="calendly-inline-widget" data-url="https://calendly.com/vive-rentable/reunion-de-inversion"></div>
       <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
       <!-- Final del widget integrado de Calendly -->
     </div>
@@ -636,7 +143,7 @@ padding-top: 10px;
     <div class="grid-s4">
       <div>
         <div class="numero">
-          1
+          01
 
         </div>
         <h4>Seguridad de inversión</h4>
@@ -645,7 +152,7 @@ padding-top: 10px;
       </div>
       <div>
         <div class="numero">
-          2
+          02
 
         </div>
         <h4>Asesoría personalizada</h4>
@@ -655,7 +162,7 @@ padding-top: 10px;
       </div>
       <div>
         <div class="numero">
-          3
+          03
 
         </div>
         <h4>Flujo de ingresos continuo</h4>
@@ -666,7 +173,7 @@ padding-top: 10px;
       <div></div>
       <div>
         <div class="numero">
-          4
+          04
 
         </div>
         <h4>Flujo de ingresos continuo</h4>
@@ -676,7 +183,7 @@ padding-top: 10px;
 
       <div>
         <div class="numero">
-          5
+          05
 
         </div>
         <h4>Flujo de ingresos continuo</h4>
@@ -740,7 +247,7 @@ padding-top: 10px;
   <section class="seccion_06" id="about">
     <div>
       <h4>Proyectos invertidos</h4>
-      <p>10+</p>
+      <p>04+</p>
 
     </div>
     <span>
@@ -749,7 +256,7 @@ padding-top: 10px;
     <div>
       <h4>Años de
         experencia</h4>
-      <p>10+</p>
+      <p>02+</p>
 
     </div>
     <span>
@@ -757,65 +264,572 @@ padding-top: 10px;
     </span>
     <div>
       <h4>Clientes satisfechos</h4>
-      <p>40+</p>
+      <p>10+</p>
 
     </div>
-   
+
   </section>
 
   <footer class="footer">
     <div class="section__container footer__container">
-        <div class="footer__col">
-            <h4>Vive Rentable</h4>
-            <p>
-                La plataforma invita a los
-                inversores a ser agentes de cambio en
-                sectores como agroindustria,
-                inmobiliario y tecnología. Transforma
-                las inversiones en acciones, brindando
-                oportunidades para participar en
-                proyectos monumentales y ser
-                protagonistas de historias de éxito.
-            </p>
-            <div class="footer__socials">
-                <span>
-                    <a href="https://www.facebook.com/viverentablepe" target="_blank"><i
-                            class="ri-facebook-circle-fill"></i></a>
-                </span>
-                <span>
-                    <a href="https://www.instagram.com/viverentable/" target="_blank"><i
-                            class="ri-instagram-line"></i></a>
-                </span>
-                <span>
-                    <a href="https://www.tiktok.com/@vive.rentable" target="_blank"><i
-                            class="ri-tiktok-fill"></i></a>
-                </span>
-                <span>
-                    <a href="https://www.linkedin.com/company/vive-rentable/" target="_blank"><i
-                            class="ri-linkedin-fill"></i></a>
-                </span>
-            </div>
+      <div class="footer__col">
+        <h4>Vive Rentable</h4>
+        <p>
+          La plataforma invita a los
+          inversores a ser agentes de cambio en
+          sectores como agroindustria,
+          inmobiliario y tecnología. Transforma
+          las inversiones en acciones, brindando
+          oportunidades para participar en
+          proyectos monumentales y ser
+          protagonistas de historias de éxito.
+        </p>
+        <div class="footer__socials">
+          <span>
+            <a href="https://www.facebook.com/viverentablepe" target="_blank"><i
+                class="ri-facebook-circle-fill"></i></a>
+          </span>
+          <span>
+            <a href="https://www.instagram.com/viverentable/" target="_blank"><i class="ri-instagram-line"></i></a>
+          </span>
+          <span>
+            <a href="https://www.tiktok.com/@vive.rentable" target="_blank"><i class="ri-tiktok-fill"></i></a>
+          </span>
+          <span>
+            <a href="https://www.linkedin.com/company/vive-rentable/" target="_blank"><i
+                class="ri-linkedin-fill"></i></a>
+          </span>
         </div>
+      </div>
 
-        <div class="footer__col">
-            <h4>Contacto</h4>
-            <a href="#contact">
-                <span><i class="ri-mail-line"></i></span> info@vive-rentable.com
-            </a>
-            <a href="https://wa.link/garf4f" target="_blank">
-                <span><i class="ri-phone-line"></i></span>947548260
-            </a>
-            <a target="_blank" href="https://vive-rentable.com/">
-                <img class="logo_negativo" src="./assets/logo_negativo.png" alt="logo">
-            </a>
-        </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a href="#contact">
+          <span><i class="ri-mail-line"></i></span> info@vive-rentable.com
+        </a>
+        <a href="https://wa.link/garf4f" target="_blank">
+          <span><i class="ri-phone-line"></i></span>947548260
+        </a>
+        <a target="_blank" href="https://vive-rentable.com/">
+          <img class="logo_negativo" src="./assets/logo_negativo.png" alt="logo">
+        </a>
+      </div>
     </div>
     <div class="footer__bar">
-        Copyright © 2024 vive-rentable.com All rights reserved.
+      Copyright © 2024 vive-rentable.com All rights reserved.
     </div>
-</footer>
+  </footer>
 
 </body>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  header {
+    height: 100vh;
+    background-color: #005E6D;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    padding: 1.5rem 2rem;
+
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  nav a:hover {
+    color: #00AE44;
+    transition: 0.3s;
+
+  }
+
+  nav ul {
+
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0 2rem;
+  }
+
+
+  nav img {
+
+    width: 160px;
+    height: 80px;
+    margin-left: 30px;
+  }
+
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .b01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+    ;
+    padding-left: 5rem;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .b01 a {
+    margin-top: 10px;
+    text-align: center;
+    width: 220px;
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #00AE44;
+    font-weight: 500;
+    border-radius: 10px;
+
+  }
+
+  .b01 a:hover {
+    background-color: #f2f2f2;
+    color: #00AE44;
+    transition: 0.3s;
+  }
+
+
+  .b02 {
+    width: 100%;
+    height: 450px;
+
+  }
+
+  .b02 img {
+
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    margin: 0 0 0 8vw;
+
+  }
+
+
+  /* acrds */
+
+  .seccion_02 {
+    background-image: url('../assets/nuevo/fondo2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -350px;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .seccion_02 h2 {
+
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2rem;
+    color: #00AE44;
+    font-weight: 800;
+
+  }
+
+  .cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 370px;
+    height: 420px;
+    margin: 0 10px;
+    perspective: 1000px;
+    border-radius: 10px;
+  }
+
+  .card .front,
+  .card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .card .front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+  }
+
+  .card .back {
+    display: none;
+    padding: 20px;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s;
+  }
+
+  .card.flipped .front {
+
+    transform: rotateY(-180deg);
+  }
+
+  .card.flipped .back {
+    transform: rotateY(0deg);
+    display: flex;
+  }
+
+  .card p {
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+  }
+
+  .card .title {
+    font-size: 24px;
+    font-weight: 600;
+    width: 50%;
+
+  }
+
+  .uno {
+    background-color: #00AE44;
+    background-size: cover;
+    position: relative;
+
+  }
+
+
+  .dos {
+    background-color: #0BCDD6;
+    position: relative;
+    background-size: cover;
+
+  }
+
+
+  .tres {
+    background-color: #005E6D;
+    position: relative;
+    background-size: cover;
+
+  }
+
+  .front .link {
+    margin-top: 30PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .front .link:hover {
+    cursor: pointer;
+
+  }
+
+
+  /* SECCION 03 */
+  .seccion_03 {
+    background-image: url("../assets/nuevo/fondos3.png");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -10px;
+    z-index: 1;
+  }
+
+
+
+  .calendario {
+    width: 200vw;
+
+
+
+  }
+
+  .calendly-inline-widget {
+    width: 100%;
+    height: 570px;
+  }
+
+  .textos3 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 90px;
+
+  }
+
+  .textos3 p {
+    font-size: 2rem;
+    color: #f2f2f2;
+    font-weight: 400;
+    margin-bottom: 20px;
+    z-index: 2;
+  }
+
+  .textos3 span {
+    font-size: 2.2rem;
+    font-weight: 800;
+  }
+
+
+  /* seccion 4 */
+  .seccion_04 {
+    background-image: url("../assets/nuevo/fondo2.1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seccion_04 h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #00AE44;
+    font-weight: 800;
+    margin-bottom: 50px;
+  }
+
+  .grid-s4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1000px;
+    height: 100%;
+  }
+
+  .grid-s4 .numero {
+    font-size: 30px;
+    color: #00AE44;
+    font-weight: 800;
+
+
+  }
+
+  .grid-s4 h4 {
+    font-size: 20px;
+    color: #059298;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .grid-s4 p {
+    width: 80%;
+    font-size: 18px;
+    color: #005E6D;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  /* SECCION05 */
+
+  .seccion_05 {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url("../assets/nuevo/fondos5.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .seccion_05 div {
+    margin: auto 20px;
+  }
+
+  .divp {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 0 5rem;
+
+  }
+
+  .seccion_05 p {
+    text-align: end;
+    width: 80%;
+    font-size: 1.9rem;
+    color: #00AE44;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .seccion_05 span {
+    font-size: 2rem;
+    color: #00AE44;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  /* Formulario de contacto */
+
+
+  .animate-bg {
+    margin-left: 20px;
+  }
+
+  .container {
+    padding-top: 10px;
+    width: 680px;
+    height: 380px;
+    background-color: #fff;
+  }
+
+
+  #mc_embed_shell h2 {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* seccion 6 */
+  .seccion_06 {
+
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 30% 5% 30% 5% 30%;
+  }
+
+  .seccion_06 div {
+    text-align: center;
+    margin: auto;
+  }
+
+  .seccion_06 h4 {
+    font-size: 1.5rem;
+    color: #005E6D;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+  }
+
+  .seccion_06 p {
+    font-size: 3rem;
+    color: #00AE44;
+    font-weight: 900;
+    margin-bottom: 20px;
+
+  }
+
+  .seccion_06 span {
+    margin: auto;
+    width: 10px;
+    height: 180px;
+    background-color: #00AE44;
+
+  }
+
+  /* Footer Styles */
+  .footer {
+    background-color: #005E6C;
+  }
+
+  .footer__container {
+    padding-top: 20px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .footer__col h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white
+  }
+
+  .footer__col p {
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .footer__col a {
+    display: block;
+    margin-bottom: 1rem;
+    color: white;
+    transition: 0.3s;
+  }
+
+  .footer__col a span {
+    margin-right: 5px;
+  }
+
+  .footer__col a:hover {
+    color: #00AE45;
+  }
+
+  .footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer__socials span {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .footer__bar {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .logo_negativo {
+    width: 200px;
+    height: 100px;
+  }
+</style>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll('.card');
