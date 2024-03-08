@@ -18,282 +18,136 @@
   <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-  <!-- BOSSTRAP -->
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <!--  -->
-
   <link rel="stylesheet" href="./css/styles.css" />
-  <script src="https://unpkg.com/scrollreveal"></script>
   <title>Vive Rentable</title>
 
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- -------- -->
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSWPS2CX" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <nav>
-    <div class="nav__bar">
-      <div class="nav__logo"><a href="#">Vive Rentable</a></div>
-      <ul class="nav__links">
-        <li class="link"><a href="#home">Inicio</a></li>
-        <li class="link"><a href="#project">Proyectos</a></li>
-        <li class="link"><a href="#about">Sobre nosotros</a></li>
-        <li class="link"><a href="#contact">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
+  <header>
+    <nav>
+      <img src="./assets/logo_negativo.png" alt="logo">
+      <div>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#news">Noticias de inversión</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
 
-  <header class="header">
-    <div class="header__container">
-      <div class="header__content">
-        <h1>Invierte en el <span> Futuro </span> de los Negocios</h1>
-        <p>
-          Ofrecemos una diversificación de inversiones, detallando los beneficios para
-          los inversores y destacando la oportunidad de participar en varios proyectos empresariales.
-        </p>
-        <div class="header__btns">
-          <a href="https://wa.link/garf4f" target="_blank"><button class="btn btn__secondary">Invertir</button></a>
-        </div>
       </div>
-      <div class="header__image">
-        <img class="img_logo" src="assets/logotipo.png" alt="header" />
+
+    </nav>
+    <div class="banner">
+      <div class="b01">
+        <h1>INVIERTE EN EL FUTURO DE LOS NEGOCIOS</h1>
+        <a href="">Conoce más</a>
+
       </div>
+      <div class="b02">
+        <img src="./assets/nuevo/nuevo-web.png" alt="imagen">
+      </div>
+
     </div>
+
+
   </header>
 
-
-  <!-- CRONOMETRO WEBINAR -->
-  <!-- <section class="contador">
-    <div class="container">
-      <h2>Próximo webinar gratuito</h2>
-      <div id="cuenta"></div>
-      <a href="#contact"><button class="btn btn__secondary">Quiero participar</button></a>
+  <section class="seccion_02">
+    <div>
+      <h2>NUESTROS PROYECTOS</h2>
 
     </div>
-  </section> -->
+    <div class="cards">
 
-
-  <!-- CARDS -->
-  <section class="section_proy" id="project">
-    <div class="container text-center">
-      <h2>PROYECTOS</h2><br>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="./assets/cmb-001.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h4 class="card-title">CÁMARA DE MADURACIÓN DE BANANO</h4>
-              <p class="card-text">Bajo este escenario de <br> inversión de 4 socios, el porcentaje de participación del
-                25%
-                les da un margen de utilidad mensual <br>de S/12,100</p>
-              <a target="_blank" href="./maduracion-de-banano.html" class="btn btn__secondary">Saber más</a>
-            </div>
-          </div>
+      <div class="card uno">
+        <div class="front">
+          <img src="./assets/nuevo/l01.png" alt="">
+          <p class="title">CÁMARA DE MADURACION DE BANANO</p>
+          <p class="link">Ver más <img src="./assets/nuevo/flecha.png" alt=""></p>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="./assets/mgapuerto.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h4 class="card-title">LOTES EN <br>CHANCAY</h4>
-              <p class="card-text">Este avance posiciona a Chancay como una zona de alto potencial para
-                inversiones inmobiliarias, con expectativas de crecimiento económico y aumento en el valor de las
-                propiedades.</p>
-              <a href="#" class="btn btn__secondary">Saber más</a>
-            </div>
-          </div>
-        </div>
+        <div class="back">
+          <p>El negocio de maduración de banano ofrece un flujo de ingresos continuo y se puede diversificar la
+            inversión
+            al albergar otras frutas en distintas temporadas.
 
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="./assets/inversiones.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h4 class="card-title">PROXIMO PROYECTO</h4>
-              <p class="card-text">Suscríbete para descubrir futuros proyectos con alta rentabilidad y gran proyección a
-                futuro.</p>
-              <a href="#" class="btn btn__secondary">Saber más</a>
-            </div>
-          </div>
+            Las cámaras de maduración son ambientes que son mantenidos a una temperatura definida que permita la
+            correcta
+            maduración de los productos en su interior, previniendo la sobre maduración y que se vean afectados por
+            plagas
+          </p>
         </div>
-
       </div>
-    </div>
-  </section>
-
-
-  <!-- ABOUT -->
-  <section class="section__container about__container" id="about">
-    <div class="about__image">
-      <img src="assets/prox_proyect.webp" alt="about" />
-    </div>
-    <div class="about__content">
-      <h2>SOBRE NOSOTROS</h2>
-      <h3 class="section__header">
-        Abandona las
-        inversiones pasivas
-      </h3>
-      <p class="section__subheader">
-        La plataforma invita a los
-        inversores a ser agentes de cambio en
-        sectores como agroindustria,
-        inmobiliario y tecnología. Transforma
-        las inversiones en acciones, brindando
-        oportunidades para participar en
-        proyectos monumentales y ser
-        protagonistas de historias de éxito.
-      </p>
-      <div class="about__grid">
-        <div class="about__card">
-          <h4>Proyectos Invertidos</h4>
-          <p>10+</p>
+      <div class="card dos">
+        <div class="front">
+          <img src="./assets/nuevo/l02.png" alt="">
+          <p class="title">LOTES EN CHANCAY</p>
+          <p class="link">Ver más <img src="./assets/nuevo/flecha.png" alt=""></p>
         </div>
-        <div class="about__card">
-          <h4>Años de experiencia</h4>
-          <p>10+</p>
+        <div class="back">
+          <p>El nuevo mega puerto de Chancay abre las puertas para el negocio de los terrenos, los cuales, según el
+            mismo
+            gobierno, podrán aumentar en valor de 5 a 10 veces.
+
+            Ofrecemos la posibilidad de que inviertas con seguridad en la adquisición de terrenos amplios que otorgarán
+            un
+            rendimiento seguro en unos años. Tenemos todos los papeles en regla y muchas personas ya confían en
+            nosotros.
+          </p>
         </div>
-        <div class="about__card">
-          <h4>Clientes satisfechos</h4>
-          <p>40+</p>
+      </div>
+      <div class="card tres">
+        <div class="front">
+          <img src="./assets/nuevo/l03.png" alt="">
+          <p class="title">INVERSIONES IQUITOS</p>
+          <p class="link">Ver más <img src="./assets/nuevo/flecha.png" alt=""></p>
+        </div>
+        <div class="back">
+          <p>Iquitos, la joya de la Amazonía Peruana, tiene muchos espacios en los cuales invertir, en esta ocasión son
+            terrenos amplios que pueden ser usados para diferentes actividades. Estos terrenos estratégicamente ubicados
+            cuentan con un alto potencial de revalorización a corto y mediano plazo.
+
+            Contamos con expertos que te asesorarán en todo el proceso para que puedas invertir segur</p>
         </div>
       </div>
     </div>
+
   </section>
 
-
-  <!-- CONTACTO -->
-
-  <section class="section__container contact__container" id="contact">
-
-    <h2 style="text-align: center;">Agenda una reunión gratuita o inscríbete</h2>
-
-    <div class="contact__image">
+  <section class="seccion_03">
+    <div class="textos3">
+      <p>Agenda tu cita ahora con uno de nuestros expertos para conocer a profundidad las oportunidades de inversión</p>
+    </div>
+    <div class="calendario">
       <!-- Principio del widget integrado de Calendly -->
-      <div class="calendly-inline-widget"
-        data-url="https://calendly.com/vive-rentable/reunion-de-inversion?primary_color=00606d"
-        style="min-width:320px;height:700px;"></div>
+      <div class="calendly-inline-widget" data-url="https://calendly.com/vive-rentable/reunion-de-inversion"
+        style="min-width:100%;height:100%;"></div>
       <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
       <!-- Final del widget integrado de Calendly -->
+
     </div>
 
-    <div id="mc_embed_shell">
-      <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-      <div id="mc_embed_signup">
-        <form
-          action="https://vive-rentable.us8.list-manage.com/subscribe/post?u=8b7f686722931bd734a2e7d9b&amp;id=5ce211eaf0&amp;f_id=001202e0f0"
-          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-          target="_blank">
-          <div id="mc_embed_signup_scroll">
-            <h2>Suscríbete</h2>
-            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-            <div class="mc-field-group"><label for="mce-EMAIL">Dirección de correo electrónico <span
-                  class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email"
-                id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
-            <div class="mc-field-group"><label for="mce-FNAME">Nombre </label><input type="text" name="FNAME"
-                class=" text" id="mce-FNAME" value=""></div>
-            <div class="mc-field-group"><label for="mce-PHONE">Número de teléfono </label><input type="text"
-                name="PHONE" class="REQ_CSS" id="mce-PHONE" value=""></div>
-            <div hidden=""><input type="hidden" name="tags" value="5179753"></div>
-            <div id="mce-responses" class="clear foot">
-              <div class="response" id="mce-error-response" style="display: none;"></div>
-              <div class="response" id="mce-success-response" style="display: none;"></div>
-            </div>
-            <div aria-hidden="true" style="position: absolute; left: -5000px;">
-              <input type="text" name="b_8b7f686722931bd734a2e7d9b_5ce211eaf0" tabindex="-1" value="">
-            </div>
-            <div class="optionalParent">
-              <div class="clear foot">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                <p style="margin: 0px auto;"><a href="http://eepurl.com/iJLt9s"
-                    title="Mailchimp: marketing por correo electrónico fácil y divertido"><span
-                      style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
-                        class="refferal_badge"
-                        src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
-                        alt="Intuit Mailchimp"
-                        style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-      <script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);
-      </script>
-    </div>
   </section>
 
 
-  <!-- FOOTER -->
-
-  <footer class="footer">
-    <div class="section__container footer__container">
-      <div class="footer__col">
-        <h4>Vive Rentable</h4>
-        <p>
-          La plataforma invita a los
-          inversores a ser agentes de cambio en
-          sectores como agroindustria,
-          inmobiliario y tecnología. Transforma
-          las inversiones en acciones, brindando
-          oportunidades para participar en
-          proyectos monumentales y ser
-          protagonistas de historias de éxito.
-        </p>
-        <div class="footer__socials">
-          <span>
-            <a href="https://www.facebook.com/viverentablepe" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
-          </span>
-          <span>
-            <a href="https://www.instagram.com/viverentable/" target="_blank"><i class="ri-instagram-line"></i></a>
-          </span>
-          <span>
-            <a href="https://www.tiktok.com/@vive_rentable_" target="_blank"><i class="ri-tiktok-fill"></i></a>
-          </span>
-          <span>
-            <a href="https://www.linkedin.com/company/vive-rentable/" target="_blank"><i
-                class="ri-linkedin-fill"></i></a>
-          </span>
-        </div>
-      </div>
-      <div class="footer__col">
-        <h4>Compañia</h4>
-        <a href="#home">Inicio</a>
-        <a href="#about">Sobre nosotros</a>
-        <a href="#project">Proyectos</a>
-        <a href="#contact">Contacto</a>
-      </div>
-
-      <div class="footer__col">
-        <h4>Contacto</h4>
-        <a href="#contact">
-          <span><i class="ri-mail-line"></i></span> info@vive-rentable.com
-        </a>
-        <a href="https://wa.link/garf4f" target="_blank">
-          <span><i class="ri-phone-line"></i></span>947548260
-        </a>
-      </div>
-    </div>
-    <div class="footer__bar">
-      Copyright © 2024 vive-rentable.com All rights reserved.
-    </div>
-    <script>function loadScript(a) { var b = document.getElementsByTagName("head")[0], c = document.createElement("script"); c.type = "text/javascript", c.src = "https://tracker.metricool.com/resources/be.js", c.onreadystatechange = a, c.onload = a, b.appendChild(c) } loadScript(function () { beTracker.t({ hash: "167b64a031330cb028b22d0d6f4aa075" }) });</script>
-  </footer>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="./js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="./js/simplyCountdown.min.js"></script>
-  <script src="./js/countdown.js"></script>
-
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+      card.addEventListener('click', function () {
+        card.classList.toggle('flipped');
+      });
+    });
+  });
+
+</script>
 
 </html>
