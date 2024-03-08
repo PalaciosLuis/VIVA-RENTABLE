@@ -27,6 +27,277 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <!-- -------- -->
 </head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  height: 100vh;
+  background-color: #005E6D;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: #00AE44;
+  transition: 0.3s;
+
+}
+
+nav ul {
+
+  display: flex;
+}
+
+nav ul li{
+  margin: 0 2rem;
+}
+
+
+nav img {
+
+  width: 160px;
+  height: 80px;
+  margin-left: 30px;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.b01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 450px;
+  ;
+  padding-left: 5rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.b01 a {
+  margin-top: 10px;
+  text-align: center;
+  width: 220px;
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #00AE44;
+  font-weight: 500;
+  border-radius: 10px;
+
+}
+
+.b01 a:hover {
+  background-color: #f2f2f2;
+  color: #00AE44;
+  transition: 0.3s;
+}
+
+
+.b02 {
+  width: 100%;
+  height: 450px;
+
+}
+
+.b02 img {
+
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  margin: 0 0 0 8vw;
+
+}
+
+
+/* acrds */
+
+.seccion_02{
+  width: 100%;
+  height: 100vh;
+}
+.seccion_02 h2{
+
+  margin-top: 80px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 2rem;
+  color: #00AE44;
+  font-weight: 800;
+
+}
+
+ .cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 370px;
+  height: 420px;
+  margin: 0 10px;
+  perspective: 1000px;
+  border-radius: 10px;
+}
+
+.card .front,
+.card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card .front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+}
+
+.card .back {
+  display: none;
+  padding: 20px;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.5s;
+}
+
+.card.flipped .front {
+  
+  transform: rotateY(-180deg);
+}
+
+.card.flipped .back {
+  transform: rotateY(0deg);
+  display: flex;
+}
+
+.card p {
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+}
+
+.card .title{
+  font-size: 24px;
+  font-weight: 600;
+  width: 50%;
+
+}
+
+.uno {
+  background-color: #00AE44;
+  background-size: cover;
+  position: relative;
+
+}
+
+
+.dos {
+background-color: #0BCDD6;
+  position: relative;
+  background-size: cover;
+
+}
+
+
+.tres {
+  background-color: #005E6D;
+  position: relative;
+  background-size: cover;
+
+}
+.front .link{
+  margin-top: 30PX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.front .link:hover{
+  cursor: pointer;
+
+}
+
+
+/* SECCION 03 */
+.seccion_03{
+  background-image: url("../assets/nuevo/fondos3.png");
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  z-index: 2;
+}
+
+.seccion_03::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 220, 85, 0.972);
+  z-index: -1;
+
+}
+.textos3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
+ 
+}
+
+.textos3 p{
+  font-size: 1.5rem;
+  color: #f2f2f2;
+  font-weight: 600;
+  margin-bottom: 20px;
+  z-index: 3;
+}
+
+.calendario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+</style>
 
 <body>
   <header>
