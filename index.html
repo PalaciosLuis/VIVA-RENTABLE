@@ -32,24 +32,33 @@
 <body>
 
   <header>
-    <nav>
-      <img src="./assets/logo_negativo.png" alt="logo">
-      <div>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#news">Noticias de inversión</a></li>
-          <li><a href="#contact">Contacto</a></li>
+    <!-- menu  -->
+    <div class="header">
+      <nav class="navbar">
+        <img class="logo" src="./assets/logo_negativo.png"></img>
+        <label class="labe_hamburguesa" for="menu_hamburguesa">
+          <img class="list_icon" src="./assets/nuevo/menu-regular-24.png" alt="">
+        </label>
+        <input class="menu_hamburguesa" type="checkbox" id="menu_hamburguesa">
+
+        <ul class="ul_links">
+          <li class="li_links"><a class="link" href="#">Inicio</a></li>
+          <li class="li_links"><a class="link" href="#about">Nosotros</a></li>
+          <li class="li_links"><a class="link" href="#projects">Proyectos</a></li>
+          <li class="li_links"><a class="link" href="#new">Noticias de inversión</a></li>
+          <li class="li_links"><a class="link" href="#contact">Contacto</a></li>
         </ul>
+      </nav>
 
-      </div>
+    </div>
 
-    </nav>
+
+    <!--  -->
+
     <div class="banner">
       <div class="b01">
-        <h1>INVIERTE EN EL FUTURO DE LOS NEGOCIOS</h1>
-        <a href="https://wa.me/+51947548260">Conoce más</a>
+        <h1>La clave para una inversión diversificada y rentable</h1>
+        <a target="_blank" href="https://wa.me/+51947548260">Conoce más</a>
 
       </div>
       <div class="b02">
@@ -146,18 +155,17 @@
           01
 
         </div>
-        <h4>Seguridad de inversión</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
+        <h4>Rendimiento esperado</h4>
+        <p>Te informamos desde el inicio qué tantas ganancias podrás recibir de la inversión en un largo o mediano
+          plazo.</p>
       </div>
       <div>
         <div class="numero">
           02
 
         </div>
-        <h4>Asesoría personalizada</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
+        <h4>Cuidamos tu capital como <br> nuestro</h4>
+        <p>Rentabilizamos tu dinero para que no se mantenga estancado a medida que pasa el tiempo.</p>
 
       </div>
       <div>
@@ -165,9 +173,8 @@
           03
 
         </div>
-        <h4>Flujo de ingresos continuo</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
+        <h4>Seguridad en tu inversión</h4>
+        <p>Ponemos los papeles sobre la mesa para que decidas invertir de manera segura.</p>
       </div>
 
       <div></div>
@@ -176,9 +183,8 @@
           04
 
         </div>
-        <h4>Flujo de ingresos continuo</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
+        <h4>Oportunidades poco <br> explotadas</h4>
+        <p>Contamos con oportunidades de inversión en sectores desatendidos y de gran potencial.</p>
       </div>
 
       <div>
@@ -186,9 +192,8 @@
           05
 
         </div>
-        <h4>Flujo de ingresos continuo</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
+        <h4>Para todo presupuesto</h4>
+        <p>Contamos con diferentes niveles de inversión para que puedas rentabilizar tu capital.</p>
       </div>
 
     </div>
@@ -329,53 +334,112 @@
     font-family: "Inter", sans-serif;
   }
 
-  ul {
-    list-style: none;
-  }
-
   header {
     height: 100vh;
     background-color: #005E6D;
   }
 
-  nav {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    align-items: center;
-    padding: 1.5rem 2rem;
+  a {
 
-  }
-
-  nav a {
-    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
   }
 
-  nav a:hover {
-    color: #00AE44;
-    transition: 0.3s;
-
+  ol,
+  ul {
+    list-style: none;
   }
 
-  nav ul {
+  .logo {
+    width: 80px;
+  }
 
+  .header {
+
+    height: 90px;
+  }
+
+  .navbar {
+    height: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 2rem;
   }
 
-  nav ul li {
-    margin: 0 2rem;
+  .ul_links {
+    background-color: #00AE44;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    height: 0;
+    overflow: hidden;
+    left: 0;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    transition: 0.5s;
+
   }
 
+  .list_icon {
+    color: white;
+    cursor: pointer;
+  }
 
-  nav img {
+  .link {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
 
-    width: 160px;
-    height: 80px;
-    margin-left: 30px;
+  }
+
+  .menu_hamburguesa {
+    display: none;
+  }
+
+  .menu_hamburguesa:checked+.ul_links {
+    height: calc(100vh - 50vh);
+
+
+  }
+
+  @media(min-width:768px) {
+    .header {
+      padding-block-start: 20px;
+    }
+
+    .logo {
+      width: 200px;
+    }
+
+    .labe_hamburguesa {
+      display: none;
+    }
+
+    .ul_links {
+      position: static;
+      width: auto;
+      flex-direction: row;
+      height: auto;
+      gap: 2rem;
+      background-color: transparent;
+    }
+
+    .link {
+      font-size: 1.2rem;
+    }
+
+    .link:hover {
+      color: #00AE44;
+    }
   }
 
   .banner {
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -386,7 +450,6 @@
     justify-content: center;
     width: 100%;
     height: 450px;
-    ;
     padding-left: 5rem;
     font-size: 1.5rem;
     color: #fff;
@@ -411,6 +474,9 @@
     transition: 0.3s;
   }
 
+  .b01 h1 {
+    text-transform: uppercase;
+  }
 
   .b02 {
     width: 100%;
@@ -527,7 +593,7 @@
 
 
   .dos {
-    background-color: #0BCDD6;
+    background-color: #009AA8;
     position: relative;
     background-size: cover;
 
@@ -551,6 +617,7 @@
 
   .front .link:hover {
     cursor: pointer;
+    color: #f2f2f2;
 
   }
 
@@ -829,7 +896,200 @@
     width: 200px;
     height: 100px;
   }
+
+
+  /* RESPONSIVE */
+
+  @media only screen and (max-width: 600px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .menu {
+      display: flex;
+      width: 50px;
+
+    }
+
+    nav ul {
+      display: none;
+      flex-direction: column;
+    }
+
+    .cambio {
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 10px 0;
+    }
+
+    .banner {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+
+    }
+
+    .b01 {
+      padding: 0;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .b02 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .b02 img {
+      width: 300px;
+      height: 300px;
+      margin: 0;
+    }
+
+    .seccion_02 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: none;
+    }
+
+    .cards {
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* seccion 3 */
+    .seccion_03 {
+      margin-top: 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .textos3 {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .calendario {
+      width: 100%;
+    }
+
+    .calendly-inline-widget {
+      width: 100%;
+      height: 500px;
+    }
+
+    /* seccion 4 */
+    .seccion_04 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: none;
+    }
+
+    .grid-s4 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid-s4 div {
+      margin: 20px 50px;
+    }
+
+    /* seccion 5 */
+    .seccion_05 {
+      margin-top: 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      background: none;
+    }
+
+    .divp {
+      padding: 0;
+      text-align: center;
+    }
+
+    #mc_embed_shell {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 20px 0 0;
+      background-color: aliceblue;
+
+    }
+
+    /* seccion 6 */
+    .seccion_06 {
+      margin-top: 30px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: none;
+    }
+
+    .seccion_06 span {
+      width: 280px;
+      height: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Footer Styles */
+    .footer__container {
+      padding: 20px;
+    }
+
+    .footer__col h4 {
+      font-size: 20px;
+    }
+
+    .footer__col p {
+      font-size: 16px;
+    }
+
+    .footer__socials span {
+      font-size: 24px;
+    }
+
+    .footer__bar {
+      font-size: 16px;
+    }
+
+    .logo_negativo {
+      width: 100px;
+      height: 50px;
+    }
+
+
+  }
 </style>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll('.card');
