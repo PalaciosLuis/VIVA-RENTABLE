@@ -28,14 +28,6 @@
 
 </head>
 <style>
-    .accordion-item {
-
-        padding: 20px;
-        border: 2px solid #005E6C;
-        margin-bottom: 30px;
-    }
-
-
     * {
         margin: 0;
         padding: 0;
@@ -144,68 +136,71 @@
         background-color: #005E6C;
     }
 
+
+    /* seccion 1 */
     .seccion_01 {
         width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .s1_cont {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
-
-    }
-
-    .img_s1 {
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        object-fit: cover;
-        gap: 40px;
-    }
-
-    /* .img_s1 img {
-
-        margin: auto;
-        width: 600px;
-        height: 300px;
-        object-fit: cover;
-    } */
-
-    .p_s1 {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        width: 80%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
         gap: 20px;
+        padding: 40px;
+    }
+
+    .s1_cont span {
+        color: #00AE45;
+        font-weight: 700;
+    }
+
+    .s1_cont img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 0 20px 20px rgba(32, 142, 164, 0.5);
+    }
+
+    .parrafo1 {
+        width: 80%;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .parrafo2 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 40px;
+
+    }
+
+    .parrafo1 p {
         font-size: 20px;
         color: #005E6C;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .parrafo2 p {
+        font-size: 20px;
+        color: #005E6C;
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-align: end;
+    }
+
+    .parrafo2 span {
+        color: #00AE45;
         font-weight: 700;
-
-    }
-
-    #poster {
-        width: 600px;
-        height: 300px;
-        transition: box-shadow .1s, tansform .1s;
-        background: url("../assets/banner_img/camara_01.png"),
-            no-repeat center;
-        background-size: cover;
-    }
-
-    #poster:hover {
-        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-    }
-
-    #poster1 {
-        width: 600px;
-        height: 300px;
-        transition: box-shadow .1s, tansform .1s;
-        background: url("../assets/banner_img/camara_04.png"),
-            no-repeat center;
-        background-size: cover;
-    }
-
-    #poster1:hover {
-        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+        font-style: italic;
+        font-size: 30px;
     }
 
 
@@ -252,6 +247,55 @@
     .s02_texto h3 {
         padding-top: 10px;
         font-size: 25px;
+    }
+
+    /* SECCION 03 */
+    .seccion_03 {
+        background-image: url("./assets/banner_img/fondo-verde-banner.jpg");
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        background-size: cover;
+
+    }
+
+
+
+    .calendario {
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .calendly-inline-widget {
+        width: 100%;
+        height: 570px;
+    }
+
+    .textos3 {
+        font-style: italic;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
+
+
+    }
+
+    .textos3 p {
+
+        font-size: 1.6rem;
+        color: #f2f2f2;
+        font-weight: 400;
+        margin-bottom: 20px;
+        z-index: 2;
+    }
+
+    .textos3 span {
+        font-size: 2.2rem;
+        font-weight: 800;
     }
 
 
@@ -333,13 +377,7 @@
 
     /* --------- */
 
-    .qr {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 20px;
 
-    }
 
     .s001 {
         margin: auto;
@@ -452,50 +490,12 @@
 
     /* --------------- */
     .seccion_04 {
+        padding-top: 4rem;
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin-bottom: 2rem;
 
-
-    }
-
-    .superior {
-
-        padding-top: 30px;
-        padding-bottom: 50px;
-        margin: auto;
-        width: 1000px;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .cont {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-
-    .cont {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .img {
-        width: 1000px;
-    }
-
-    .cont img {
-        width: 100px;
-        margin: auto;
-    }
-
-    .cont p {
-
-        text-align: center;
-        font-size: 30px;
-        color: #005E6C;
-        font-weight: 800;
 
     }
 
@@ -505,6 +505,7 @@
     }
 
     .cont1 {
+        width: 80%;
         padding: 30px;
         margin: auto;
     }
@@ -514,11 +515,10 @@
         padding-left: 80px;
         color: #00AE45;
         font-size: 50px;
-
         font-weight: 800;
     }
 
-    .cont1 p {
+    .cont2 p {
 
         width: 80%;
         color: #005E6C;
@@ -527,58 +527,45 @@
         font-weight: 700;
     }
 
-
-    /* --------------- */
-
-    .accordion-item {
-
-        width: 600px;
-        padding: 20px;
-        border: 2px solid #005E6C;
-        margin-bottom: 30px;
-
+    .cont3 {
+        width: 100%;
+        margin-block: 20px;
     }
 
-    .accordion-header {
-        text-transform: uppercase;
-
-        color: #005E6C;
-        font-size: 23px;
-        display: grid;
-        grid-template-columns: 1fr 50px;
-        height: 100%;
-        cursor: pointer;
-        font-weight: bold;
-    }
-
-    .border {
-        border: 2px solid #00AE45;
-    }
-
-    .accordion-content {
-
-
-
-        color: #005E6C;
-        font-size: 18px;
-        font-weight: 500;
-
-        display: none;
-    }
-
-    .accordion-content.active {
-        display: block;
-    }
-
-    .toggle {
-        color: #00AE45;
+    .cont3 h2 {
         margin: auto;
-        font-size: 30px;
+        width: 80%;
+        text-align: center;
+        color: #00AE45;
+        font-size: 45px;
+        font-weight: 800;
+        font-style: italic;
     }
 
 
 
 
+    .boton {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 20px;
+
+    }
+
+    .boton a {
+        font-style: italic;
+        width: 400px;
+        text-align: center;
+        padding: 20px 40px;
+        background-color: #005E6C;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 800;
+        border-radius: 30px;
+        transition: 0.3s;
+    }
 
     /* ===================================================== */
     /* Formulario de contacto */
@@ -755,31 +742,43 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
-            padding-bottom: 20px;
-        }
-
-        .img_s1 {
-            gap: 100px;
-            display: flex;
-            flex-wrap: wrap;
             justify-content: center;
         }
 
-        #poster {
+        .s1_cont {
+            display: flex;
+            flex-direction: column;
             width: 100%;
+            justify-content: center;
+        }
+
+        .s1_cont img {
+            margin: auto;
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .parrafo1 {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .coo {
+            flex-direction: column-reverse;
+            top: 0;
+        }
+
+        .parrafo2 {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            text-align: start;
 
         }
 
-        #poster1 {
-            width: 100%;
 
-        }
-
-        .p_s1 {
-            margin-top: 120px;
-            /* Ajusta el margen superior del texto según sea necesario */
-        }
 
         /* Seccion 02 */
         .seccion_02 {
@@ -897,7 +896,7 @@
         }
 
         .container_add p {
-            font-size: 20px;
+            font-size: 1rem;
         }
 
         /* Formulario de contacto */
@@ -906,11 +905,24 @@
         }
 
         .container h3 {
-            font-size: 30px;
+            font-size: 1.5rem;
         }
 
         #mc_embed_shell h4 {
             font-size: 20px;
+        }
+
+        .textos3 {
+            margin-top: 2rem;
+        }
+
+        .textos3 span {
+            font-size: 2rem;
+        }
+
+        .textos3 p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
         }
 
         /* Seccion 04 */
@@ -932,17 +944,47 @@
         }
 
         .cont1 h2 {
+            width: 90%;
             padding-left: 0;
-            font-size: 50px;
+            font-size: 40px;
         }
 
         .cont1 {
             width: 100%;
         }
 
-        .accordion-item {
-            margin: 10px auto;
-            width: 80%;
+        .calendario {
+            width: 400px;
+            height: 100%;
+            padding-bottom: 50px;
+        }
+
+
+        .cont2 p {
+            margin: auto;
+            font-size: 1rem;
+            width: 90%;
+            text-align: center;
+        }
+
+        .cont3 h2 {
+            padding-left: 0;
+            font-size: 30px;
+        }
+
+        .boton {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+        }
+
+        .boton a {
+            width: 300px;
+            font-size: 20px;
+
         }
 
 
@@ -1015,29 +1057,29 @@
 
 
     <section class="seccion_01">
-        <div class="img_s1">
-            <div id="poster">
-
+        <div class="s1_cont">
+            <img src="./assets/imagens2_maduracion.png" alt="">
+            <div class="parrafo1">
+                <p>En pleno auge de la Agricultura peruana, invertir bien es invertir en las necesidades de un sector
+                    que crece de manera acelerada y que aún pocos inversionistas lo hacen. Los pocos visionarios
+                    <span>no sólo
+                        ven retornar su inversión</span> de manera rápida, sino que <span>multiplican su capital.</span>
+                </p>
+                <p>Muchos invierten en sembrar y pocos invierten en satisfacer las necesidades de los que siembran y del
+                    producto cosechado: ¡Los servicios de conservación y maduración!</p>
             </div>
-
-            <div id="poster1">
-
-            </div>
-
-
         </div>
-        <div class="p_s1">
-            <p>En pleno auge de la Agricultura peruana, invertir bien es invertir en las necesidades de un sector que
-                crece de manera acelerada y que aún pocos inversionistas lo hacen.</p>
-            <p>Muchos invierten en sembrar y pocos invierten en satisfacer las necesidades de los que comercializan y
-                del
-                producto cosechado: ¡Los servicios de conservación y maduración!</p>
-            <p>La demanda de estos servicios supera con creces a la oferta actual. Miles de servicios de maduración se
-                facturan diariamente, pero miles más quedan en espera debido a la escasez de cámaras de maduración en
-                Lima y en todo el Perú.Es ahí donde se abren las oportunidades para todo inversor visionario.
-            </p>
-            <p>¡Es hora de capitalizar esta brecha en el mercado!</p>
+        <div class="s1_cont coo">
+            <div class="parrafo2">
+                <p>La demanda de estos servicios supera con creces a la oferta actual. Miles de servicios de maduración
+                    se facturan diariamente, pero miles más quedan en espera debido a la escasez de cámaras de
+                    maduración en Lima y en todo el Perú.Es ahí donde se abren las oportunidades para todo inversor
+                    visionario.</p>
+                <p> <span>¡Es hora de capitalizar esta <br>
+                        brecha en el mercado!</span></p>
 
+            </div>
+            <img src="./assets/im002.jpeg" alt="">
         </div>
 
     </section>
@@ -1070,72 +1112,24 @@
 
 
     <!-- MAILCHIMP -->
-    <section class="seccion_03">
-        <div class="s03">
-            <h2>¡REGISTRATE AHORA <br> PARA NUESTRO WEBINAR EXCLUSIVO!</h2>
-            <p>Y DESCUBRE COMO EL NEGOCIO DEL BANANO PUEDE TRANSFORMAR TU VIDA FINANCIERA</p>
-            <h3>Suscríbete a nuestra Newsletter </h3>
+    <section class="seccion_03" id="contact">
+        <div class="textos3">
+            <p><span>¡Descubre cómo hacerlo en una cita con un Asesor!</span></p>
+            <p>En esta reunión el asesor(a) comercial te explicará como puedes ser socio de una cámara de maduración y
+                disfrutar de las utilidades que ésta genera sin preocuparte por labores operativas y comerciales y
+                teniendo el control y el conocimiento en tiempo real de tu inversión</p>
         </div>
-        <section class="container section_div" id="contacto">
-            <div class="contenedor">
-                <div id="mc_embed_shell">
-                    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet"
-                        type="text/css">
 
-                    <div id="mc_embed_signup">
-                        <form
-                            action="https://vive-rentable.us8.list-manage.com/subscribe/post?u=8b7f686722931bd734a2e7d9b&amp;id=5ce211eaf0&amp;f_id=001202e0f0"
-                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                            class="validate" target="_blank">
-                            <div id="mc_embed_signup_scroll" class="animate-bg">
-                                <h4>¡Descubre cómo hacerlo en nuestro webinar exclusivo!.</h4>
-                                <div class="indicates-required"><span class="asterisk">*</span> Campos requeridos</div>
-                                <div class="mc-field-group"><label for="mce-EMAIL">Dirección de correo electrónico <span
-                                            class="asterisk">*</span></label><input type="email" name="EMAIL"
-                                        class="required email" id="mce-EMAIL" required="" value=""></div>
-                                <div class="mc-field-group"><label for="mce-FNAME">Nombre </label><input type="text"
-                                        name="FNAME" class=" text" id="mce-FNAME" value=""></div>
-                                <div class="mc-field-group"><label for="mce-PHONE">Número de teléfono </label><input
-                                        type="text" name="PHONE" class="REQ_CSS" id="mce-PHONE" value=""></div>
-                                <div hidden=""><input type="hidden" name="tags" value="5179777"></div>
-                                <div id="mce-responses" class="clear foot">
-                                    <div class="response" id="mce-error-response" style="display: none;"></div>
-                                    <div class="response" id="mce-success-response" style="display: none;"></div>
-                                </div>
-                                <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                                    <input type="text" name="b_8b7f686722931bd734a2e7d9b_5ce211eaf0" tabindex="-1"
-                                        value="">
-                                </div>
-                                <div class="optionalParent">
-                                    <div class="clear foot">
-                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
-                                            value="Suscribirse">
-                                        <p style="margin: 0px auto;"><a href="http://eepurl.com/iJLt9s"
-                                                title="Mailchimp - email marketing made easy and fun"><span
-                                                    style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
-                                                        class="refferal_badge"
-                                                        src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
-                                                        alt="Intuit Mailchimp"
-                                                        style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <script type="text/javascript"
-                        src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-                    <script
-                        type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
-                </div>
+        <div class="calendario">
 
+            <!-- Principio del widget integrado de Calendly -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/vive-rentable/reunion-de-inversion">
             </div>
-
-
-        </section>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Final del widget integrado de Calendly -->
+        </div>
 
     </section>
-
     <!-- MAILCHIMP -->
 
     <!-- <article class="contador">
@@ -1156,86 +1150,38 @@
         <h3>PARA NUESTRO WEBINAR EXCLUSIVO</h3>
     </article> -->
 
-    <section class="qr">
 
-        <div class="s002">
-            <img src="./assets/qr.jpeg" alt="">
-        </div>
-        <div class="s001">
-            <h3>Únete a nuestro grupo de Whatsapp para mantenerte informado</h3>
-            <a target="_blank" href="https://chat.whatsapp.com/LQmXWnpOib4IdmCPWuQ4zm">Ingresar</a>
-
-        </div>
-
-    </section>
 
 
 
     <section class="seccion_04">
-        <!-- <div class="superior">
-            <div class="cont img">
-                <img src="./assets/calendar-regular-24.png" alt="imagen">
-                <img src="./assets/time-five-regular-24.png" alt="imagen">
-                <img src="./assets/video-regular-24.png" alt="imagen">
 
-            </div>
-            <div class="cont">
-                <p>MIÉRCOLES 6 DE MARZO</p>
-                <p>7:00 PM</p>
-                <p>VIRTUAL</p>
-
-            </div>
-
-        </div> -->
         <div class="inferior">
             <div class="cont1">
-                <h2>¿QUÉ VERÁS <br> EN ESTE <br>WEBINAR?</h2>
+                <h2>Con un capital de inversión desde S/ 20 mil, obtendrás:</h2>
 
             </div>
             <div class="cont2">
-                <div class="accordion-item">
-                    <div class="accordion-header"> Conoce el potencial de rentabilidad <span class="toggle">+</span>
-                    </div>
-                    <div class="accordion-content">
-                        <p>Aprende sobre el creciente mercado del banano y cómo puedes obtener ganancias tangibles
-                            desde el primer día brindando servicios para el sector bananero.</p>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header"> Entiende el impacto de la Demanda y Oferta <span
-                            class="toggle">+</span></div>
-                    <div class="accordion-content">
-                        <p>Obtén información valiosa sobre el crecimiento del consumo de banano en Perú y la demanda
-                            insatisfecha de servicios de maduración en ciudades como Lima, Arequipa, Trujillo, Piura.
-                            Comprende cómo esta brecha entre la demanda y la oferta puede ser una oportunidad de
-                            inversión lucrativa para ti.</p>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header"> Descubre una Alternativa Rentable a la Agricultura Tradicional <span
-                            class="toggle">+</span></div>
-                    <div class="accordion-content">
-                        <p>Compara los riesgos y beneficios de invertir en la agricultura tradicional con la opción
-                            de participar en el negocio de servicios de maduración de banano. Aprende por qué esta
-                            alternativa ofrece ingresos constantes desde el primer día y cómo puedes recuperar tu
-                            inversión en un plazo mucho más corto.</p>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header"> Explora las Ventajas Competitivas del Servicio de Maduración <span
-                            class="toggle">+</span></div>
-                    <div class="accordion-content">
-                        <p>Entiende por qué el negocio de maduración de banano ofrece un flujo de ingresos continuo y
-                            cómo puedes diversificar tu inversión al albergar otras frutas en distintas temporadas.</p>
-                    </div>
-                </div>
+                <p>Introducción al negocio del banano y la importancia de las cámaras de maduración en la cadena de
+                    suministro.</p>
+                <p>Detalles sobre el modelo de negocio y cómo puedes ser dueño de cámaras de maduración sin la
+                    preocupación  de la gestión operativa y comercial.</p>
+                <p>Estrategias para asegurar ingresos diarios y un rápido retorno de la inversión.</p>
+                <p>Oportunidad de hacer preguntas en vivo durante la asesoria</p>
             </div>
 
 
         </div>
+        <div class="boton">
+            <a href="#contact">¡HAZ CLIC Y AGENDA UNA CITA <br>
+                CON UN ASESOR COMERCIAL</a>
+        </div>
+        <div class="cont3">
+            <h2>¡No pierdas la oportunidad de explorar el potencial de inversión en el negocio del banano con VIVE
+                Rentable!</h2>
+
+        </div>
+
 
     </section>
 
