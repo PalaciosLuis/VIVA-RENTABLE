@@ -30,6 +30,16 @@
     <link rel="icon" href="./assets/logo.svg">
     <title>WEBINAR EXCLUSIVO</title>
     <meta name="description" content="Las cámaras de maduración de banano, un negocio rentable en el boom agrícola">
+
+    <!-- Etiquetas para Facebook -->
+    <meta property="og:title" content="WEBINAR EXCLUSIVO">
+    <meta property="og:description"
+        content="Las cámaras de maduración de banano, un negocio rentable en el boom agrícola">
+    <meta property="og:image" content="./assets/cm-002.png">
+    <meta property="og:url" content="https://www.facebook.com/viverentablepe">
+    <meta property="og:type" content="website">
+
+
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -183,16 +193,18 @@
 
         <div class="inferior">
             <div class="cont1">
-                <h2>Con un capital de inversión desde S/ 20 mil, obtendrás:</h2>
+                <h2>SÉ SOCIO DESDE S/.20,000</h2> <br>
+                <p>y</p>
 
             </div>
             <div class="cont2">
-                <p>Introducción al negocio del banano y la importancia de las cámaras de maduración en la cadena de
-                    suministro.</p>
-                <p>Detalles sobre el modelo de negocio y cómo puedes ser dueño de cámaras de maduración sin la
-                    preocupación  de la gestión operativa y comercial.</p>
-                <p>Estrategias para asegurar ingresos diarios y un rápido retorno de la inversión.</p>
-                <p>Oportunidad de hacer preguntas en vivo durante la asesoria</p>
+                <p>• Conviértete en uno de los <span>inversionistas
+                        pioneros</span> que satisfaga la creciente demanda
+                    de servicios de maduración y conservación.</p>
+                <p><span>• Factura desde el primer día</span> de instalada la cámara</p>
+                <p>• Ser parte de un negocio cuyo <span>retorno</span> sobre la inversión es a <span>6 meses</span></p>
+                <p>• Más del 100% de rentabilidad anual</p>
+                <p>• Negocio de por vida</p>
             </div>
 
 
@@ -757,35 +769,50 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 2rem;
-
-
     }
 
     .inferior {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
     }
 
     .cont1 {
-        width: 80%;
-        padding: 30px;
+
+        width: 100%;
         margin: auto;
     }
 
     .cont1 h2 {
 
-        padding-left: 80px;
+        margin: auto;
+        text-align: center;
         color: #00AE45;
         font-size: 50px;
         font-weight: 800;
     }
 
-    .cont2 p {
+    .cont1 p {
+        margin: auto;
+        text-align: center;
+        color: #00AE45;
+        font-size: 30px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
 
-        width: 80%;
+    .cont2 p {
+        width: 50%;
+        margin: auto;
+        font-size: 1.8rem;
+        text-align: start;
         color: #005E6C;
-        font-size: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+
+
+    }
+
+    .cont2 span {
+        color: #00AE45;
         font-weight: 700;
     }
 
@@ -1224,9 +1251,9 @@
 
         .cont2 p {
             margin: auto;
-            font-size: 1rem;
+            font-size: 1.3rem;
             width: 90%;
-            text-align: center;
+            text-align: start;
         }
 
         .cont3 h2 {
