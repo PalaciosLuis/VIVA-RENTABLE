@@ -49,1022 +49,13 @@
 
     <!--  -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/a.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
     <script id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/8b7f686722931bd734a2e7d9b/5aeb0cfa6f157ecbd99011dc8.js");
     </script>
 
 </head>
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #fff;
-        font-family: "Inter", sans-serif;
-        line-height: 1.6;
-    }
-
-
-    .section_div {
-        width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    /* BANNER */
-
-    .banner {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        background-color: #f5f5f5;
-        background-size: cover;
-        background-position: center;
-        transition: all 0.1s ease-in-out;
-        background-image: url('../assets/im001.jpeg');
-        animation: banner 28s infinite linear;
-
-    }
-
-    .banner-content {
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        background-color: rgba(10, 10, 21, 0.749);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .text_content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-
-    .text_content h1 {
-        padding: 0;
-        margin: 0;
-        font-size: 50px;
-        color: #fff;
-    }
-
-    .text_content h2 {
-        font-weight: 500;
-        font-size: 45px;
-        color: #fff;
-        margin-bottom: 40px;
-    }
-
-    .logo {
-        width: 250px;
-
-
-    }
-
-
-    @keyframes banner {
-
-        0%,
-        25% {
-            background-image: url('../assets/im001.jpeg');
-        }
-
-        26%,
-        50% {
-            background-image: url('../assets/banner_img/camara_01.png');
-        }
-
-        51%,
-        75% {
-            background-image: url('../assets/banner_img/camara_02.png');
-        }
-
-        76%,
-        100% {
-            background-image: url('../assets/banner_img/camara_03.png');
-        }
-    }
-
-
-    /* ============================================ */
-    /* Secciones */
-
-    .linea {
-        width: 100%;
-        height: 40px;
-        background-color: #005E6C;
-    }
-
-
-    /* seccion 1 */
-    .seccion_01 {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .s1_cont {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 40px;
-    }
-
-    .s1_cont span {
-        color: #00AE45;
-        font-weight: 700;
-    }
-
-    .s1_cont img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        box-shadow: 0 20px 20px rgba(32, 142, 164, 0.5);
-    }
-
-    .parrafo1 {
-        width: 80%;
-        margin-left: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .parrafo2 {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-right: 40px;
-
-    }
-
-    .parrafo1 p {
-        font-size: 20px;
-        color: #005E6C;
-        font-weight: 500;
-        margin-bottom: 20px;
-    }
-
-    .parrafo2 p {
-        font-size: 20px;
-        color: #005E6C;
-        font-weight: 500;
-        margin-bottom: 20px;
-        text-align: end;
-    }
-
-    .parrafo2 span {
-        color: #00AE45;
-        font-weight: 700;
-        font-style: italic;
-        font-size: 30px;
-    }
-
-
-    /* ---------- */
-
-    .seccion_02 {
-        width: 100%;
-        background-image: url('../assets/banner_img/fondo-banner-azul.jpg');
-        background-size: cover;
-        display: grid;
-        gap: 100px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .seccion_02 img {
-
-        width: 100%;
-        object-fit: cover;
-        height: 450px;
-    }
-
-
-    .s02_texto {
-
-        width: 100%;
-        margin-left: 100px;
-        margin-top: 100px;
-        color: #fff;
-    }
-
-    .s02_texto h2 {
-
-        font-size: 40px;
-
-    }
-
-    .s02_texto p {
-
-        text-transform: uppercase;
-        font-size: 24px;
-
-    }
-
-    .s02_texto h3 {
-        padding-top: 10px;
-        font-size: 25px;
-    }
-
-    /* SECCION 03 */
-    .seccion_03 {
-        background-image: url("./assets/banner_img/fondo-verde-banner.jpg");
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        background-size: cover;
-
-    }
-
-
-
-    .calendario {
-        width: 100%;
-        height: 100vh;
-
-    }
-
-    .calendly-inline-widget {
-        width: 100%;
-        height: 570px;
-    }
-
-    .textos3 {
-        font-style: italic;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 40px;
-
-
-    }
-
-    .textos3 p {
-
-        font-size: 1.6rem;
-        color: #f2f2f2;
-        font-weight: 400;
-        margin-bottom: 20px;
-        z-index: 2;
-    }
-
-    .textos3 span {
-        font-size: 2.2rem;
-        font-weight: 800;
-    }
-
-
-
-    /* count */
-    .contador {
-
-        width: 1000px;
-        margin: auto;
-        background-color: #fff;
-    }
-
-    .contador h2 {
-        color: #005E6C;
-        text-align: center;
-        font-size: 35px;
-        font-weight: 500;
-
-
-    }
-
-    #countdown {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #countdown div {
-        height: 100px;
-        margin: auto;
-        text-align: center;
-        color: #005E6C;
-        font-weight: 700;
-        font-size: 90px;
-        min-width: 90px;
-
-    }
-
-    .count {
-        padding-right: 10px;
-        margin: auto;
-        text-align: center;
-        color: #005E6C;
-        font-weight: 500;
-        font-size: 65px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .countmb {
-        margin: auto;
-        text-align: center;
-        color: #005E6C;
-        font-weight: 500;
-        font-size: 65px;
-        min-width: 90px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .countmb p {
-        opacity: 0;
-    }
-
-    .contador div p {
-        font-size: 30px;
-    }
-
-    .contador h3 {
-        color: #005E6C;
-        text-align: center;
-        font-size: 40px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        font-weight: 800;
-
-    }
-
-    /* --------- */
-
-
-
-    .s001 {
-        margin: auto;
-
-    }
-
-    .s001 h3 {
-        color: #005E6C;
-        font-size: 25px;
-        font-weight: 800;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .s001 a {
-        display: block;
-        margin: auto;
-        text-align: center;
-        padding: 10px 20px;
-        background-color: #005E6C;
-        color: #fff;
-        font-size: 20px;
-        font-weight: 800;
-        border-radius: 10px;
-        transition: 0.3s;
-    }
-
-    .s001 a:hover {
-        background-color: #00AE45;
-    }
-
-    .s002 {
-        margin: auto;
-    }
-
-    .s002 img {
-
-        margin: auto;
-        width: 500px;
-        height: 500px;
-        object-fit: cover;
-    }
-
-    /* -------- */
-    .agregado {
-        width: 100%;
-    }
-
-    .container_add {
-        width: 80%;
-        margin: auto;
-        padding-bottom: 30px;
-
-    }
-
-    .agregado h2 {
-        color: #00AE45;
-        text-align: center;
-        font-size: 40px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        font-weight: 900;
-
-    }
-
-    .agregado p {
-        text-align: center;
-        font-size: 24px;
-        font-weight: 600;
-        color: #005E6C;
-    }
-
-    /* --------- */
-    .seccion_03 {
-        background-image: url('../assets/banner_img/fondo-verde-banner.jpg');
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .s03 {
-        width: 100%;
-        margin: auto;
-        padding-left: 30px;
-    }
-
-    .s03 h2 {
-
-        color: #fff;
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    .s03 p {
-
-        color: #fff;
-        font-size: 28px;
-        margin-bottom: 20px;
-        font-weight: 300;
-    }
-
-    .s03 h3 {
-        color: #fff;
-        font-size: 30px;
-        margin-bottom: 20px;
-        font-weight: 800;
-    }
-
-    /* --------------- */
-    .seccion_04 {
-        padding-top: 4rem;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2rem;
-    }
-
-    .inferior {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cont1 {
-
-        width: 100%;
-        margin: auto;
-    }
-
-    .cont1 h2 {
-
-        margin: auto;
-        text-align: center;
-        color: #00AE45;
-        font-size: 50px;
-        font-weight: 800;
-    }
-
-    .cont1 p {
-        margin: auto;
-        text-align: center;
-        color: #00AE45;
-        font-size: 30px;
-        font-weight: 800;
-        text-transform: uppercase;
-    }
-
-    .cont2 p {
-        width: 50%;
-        margin: auto;
-        font-size: 1.8rem;
-        text-align: start;
-        color: #005E6C;
-        margin-bottom: 30px;
-
-
-    }
-
-    .cont2 span {
-        color: #00AE45;
-        font-weight: 700;
-    }
-
-    .cont3 {
-        width: 100%;
-        margin-block: 20px;
-    }
-
-    .cont3 h2 {
-        margin: auto;
-        width: 80%;
-        text-align: center;
-        color: #00AE45;
-        font-size: 45px;
-        font-weight: 800;
-        font-style: italic;
-    }
-
-
-
-
-    .boton {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-block: 20px;
-
-    }
-
-    .boton a {
-        font-style: italic;
-        width: 400px;
-        text-align: center;
-        padding: 20px 40px;
-        background-color: #005E6C;
-        color: #fff;
-        font-size: 20px;
-        font-weight: 800;
-        border-radius: 30px;
-        transition: 0.3s;
-    }
-
-    /* ===================================================== */
-    /* Formulario de contacto */
-
-    .contact__container {
-        display: flex;
-        align-items: center;
-
-    }
-
-    .animate-bg {
-        margin-left: 20px;
-    }
-
-    .container {
-
-        background-position: center;
-        position: relative;
-        width: 500px;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        background-color: #fff;
-        background-size: cover;
-        color: black;
-    }
-
-    .container::before {
-        content: "";
-        position: absolute;
-
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        /* Ajusta el valor alfa para controlar la opacidad */
-    }
-
-
-    #mc_embed_shell h4 {
-        font-size: 15px;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-
-    .seccion_05 {
-
-        background-position: center;
-        position: relative;
-        width: 100%;
-        height: 400px;
-        text-align: center;
-        background-image: url('../assets/im001.jpeg');
-        background-size: cover;
-        color: black;
-    }
-
-    .seccion_05::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(28, 95, 53, 0.393);
-        /* Ajusta el valor alfa para controlar la opacidad */
-    }
-
-
-    /* Footer Styles */
-    .footer {
-        background-color: #005E6C;
-    }
-
-    .footer__container {
-        padding-top: 20px;
-        padding-left: 100px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    .footer__col h4 {
-        margin-bottom: 1.5rem;
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: white
-    }
-
-    .footer__col p {
-        margin-bottom: 1rem;
-        color: white;
-    }
-
-    .footer__col a {
-        display: block;
-        margin-bottom: 1rem;
-        color: white;
-        transition: 0.3s;
-    }
-
-    .footer__col a span {
-        margin-right: 5px;
-    }
-
-    .footer__col a:hover {
-        color: #00AE45;
-    }
-
-    .footer__socials {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .footer__socials span {
-        font-size: 1.5rem;
-        color: white;
-        cursor: pointer;
-    }
-
-    .footer__bar {
-        padding: 1rem;
-        font-size: 0.9rem;
-        color: white;
-        text-align: center;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .logo_negativo {
-        width: 200px;
-        height: 100px;
-    }
-
-
-
-    @media only screen and (max-width: 600px) {
-
-        /* BANNER */
-        .banner {
-            height: 70vh;
-        }
-
-        .text_content {
-            padding: 20px;
-            grid-template-columns: 1fr;
-            justify-items: center;
-            text-align: center;
-            /* Centra los elementos en dispositivos móviles */
-        }
-
-        .text_content h1 {
-            font-size: 20px;
-        }
-
-        .text_content h2 {
-            font-size: 15px;
-            margin-bottom: 20px;
-            /* Reduce el espacio entre elementos en dispositivos móviles */
-        }
-
-        .logo {
-            width: 120px;
-            /* Reduce el tamaño del logo en dispositivos móviles */
-        }
-
-        /* Seccion 01 */
-        .seccion_01 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .s1_cont {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            justify-content: center;
-        }
-
-        .s1_cont img {
-            margin: auto;
-            width: 400px;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        .parrafo1 {
-            width: 90%;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .coo {
-            flex-direction: column-reverse;
-            top: 0;
-        }
-
-        .parrafo2 {
-            width: 90%;
-            margin: auto;
-            padding: 20px;
-            text-align: start;
-
-        }
-
-
-
-        /* Seccion 02 */
-        .seccion_02 {
-            padding-top: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .s02_texto {
-            width: 80%;
-            margin-left: 0;
-            margin-top: 0;
-
-        }
-
-        .s02_texto h2 {
-            font-size: 30px;
-        }
-
-        .s02_texto p {
-            font-size: 20px;
-        }
-
-        .seccion_02 img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        .contador {
-            font-size: 10px;
-            width: 100vw;
-            height: 100%;
-        }
-
-        #countdown {
-            height: 90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-
-        #countdown div {
-            text-align: center;
-            margin: 10px;
-            padding: 12px;
-            color: #005E6C;
-            font-weight: 900;
-            font-size: 48px;
-            min-width: 20px;
-        }
-
-
-
-        .countmb p {
-            opacity: 1;
-            font-weight: 900;
-            font-size: 10px;
-            min-width: 10px;
-        }
-
-        .count p {
-            display: none;
-            font-weight: 900;
-            font-size: 10px;
-            min-width: 10px;
-
-            /* Tamaño de las etiquetas de días, horas, minutos y segundos */
-        }
-
-        .qr {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .s002 img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
-
-        /* Seccion 03 */
-        .seccion_03 {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        .s03 {
-            margin: auto;
-            padding-top: 50px;
-
-        }
-
-        .s03 h2 {
-            font-size: 25px;
-        }
-
-        .s03 p {
-            width: 80%;
-            font-size: 20px;
-        }
-
-        .container_add h2 {
-            font-size: 30px;
-        }
-
-        .container_add p {
-            font-size: 1rem;
-        }
-
-        /* Formulario de contacto */
-        .container {
-            width: 80%;
-        }
-
-        .container h3 {
-            font-size: 1.5rem;
-        }
-
-        #mc_embed_shell h4 {
-            font-size: 20px;
-        }
-
-        .textos3 {
-            margin-top: 2rem;
-        }
-
-        .textos3 span {
-            font-size: 2rem;
-        }
-
-        .textos3 p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-        }
-
-        /* Seccion 04 */
-        .seccion_04 {
-            background: none;
-            width: 100%;
-            height: 100%;
-        }
-
-        .superior {
-            display: none;
-        }
-
-        .inferior {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .cont1 h2 {
-            width: 90%;
-            padding-left: 0;
-            font-size: 40px;
-        }
-
-        .cont1 {
-            width: 100%;
-        }
-
-        .calendario {
-            width: 400px;
-            height: 100%;
-            padding-bottom: 50px;
-        }
-
-
-        .cont2 p {
-            margin: auto;
-            font-size: 1.3rem;
-            width: 90%;
-            text-align: start;
-        }
-
-        .cont3 h2 {
-            padding-left: 0;
-            font-size: 30px;
-        }
-
-        .boton {
-            width: 90%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-
-        }
-
-        .boton a {
-            width: 300px;
-            font-size: 20px;
-
-        }
-
-
-        /* Seccion 05 */
-        .seccion_05 {
-            width: 100%;
-            height: 300px;
-        }
-
-        /* Footer Styles */
-        .footer__container {
-            padding: 20px;
-        }
-
-        .footer__col h4 {
-            font-size: 20px;
-        }
-
-        .footer__col p {
-            font-size: 16px;
-        }
-
-        .footer__socials span {
-            font-size: 24px;
-        }
-
-        .footer__bar {
-            font-size: 16px;
-        }
-
-        .logo_negativo {
-            width: 100px;
-            height: 50px;
-        }
-    }
-</style>
 
 
 <body>
@@ -1139,39 +130,104 @@
         <img src="./assets/banner_img/platanos-coomplemento.png" alt="imagen">
 
     </section>
-    <section class="agregado">
-        <div class="container_add">
-            <h2>¿Te gustaría conocer más y analizar la posibilidad de ser parte de un sector en crecimiento</h2>
 
-            <p>Conviértete en uno de los pioneros que satisfaga la creciente demanda de servicios de maduración y
-                conservación. No solo estarás generando ingresos significativos,  sino que también estarás contribuyendo
-                a mejorar la calidad y a mejorar significativamente el precio de venta de los productos de tus clientes.
-            </p>
 
+    <section class="seccion_04">
+        <h3>¿Te gustaría ser parte de este rentable negocio?</h3>
+        <h4>SÉ SOCIO DESDE S/.20,000 <br> Y</h4>
+        <div>
+            <div class="s4_cont">
+                <img src="./assets/nuevo/s401.png" alt="">
+                <p>Conviértete en uno de los <span>inversionistas pioneros</span>
+                    que satisfaga la creciente demanda
+                    de servicios de maduración y conservación.</p>
+            </div>
+            <div class="s4_cont">
+                <img src="./assets/nuevo/s402.png" alt="">
+                <p><span>Factura desde el primer día</span> de instaladala
+                    la cámara</p>
+            </div>
+            <div class="s4_cont">
+                <img src="./assets/nuevo/s403.png" alt="">
+                <p>Ser parte de un negocio cuyo <span>retorno</span> sobre la inversión es a <span>6 meses</span></p>
+            </div>
+            <div class="s4_cont">
+                <img src="./assets/nuevo/s404.png" alt="">
+                <p>Más del <span>100%</span> de rentabilidad anual</p>
+            </div>
+            <div class="s4_cont">
+                <img src="./assets/nuevo/s405.png" alt="">
+                <p>Negocio de por vida</p>
+            </div>
         </div>
+
+
 
     </section>
 
 
 
-
     <!-- MAILCHIMP -->
     <section class="seccion_03" id="contact">
-        <div class="textos3">
-            <p><span>¡Descubre cómo hacerlo en una cita con un Asesor!</span></p>
-            <p>En esta reunión el asesor(a) comercial te explicará como puedes ser socio de una cámara de maduración y
-                disfrutar de las utilidades que ésta genera sin preocuparte por labores operativas y comerciales y
-                teniendo el control y el conocimiento en tiempo real de tu inversión</p>
-        </div>
+        <div class="s3_01">
+            <div class="contenedor_acordion">
+                <h3>¡Descubre cómo hacerlo en una cita con un Asesor!</h3>
+                <p>En esta reunión el asesor(a) comercial te explicará como puedes ser socio de una cámara de maduración
+                    y disfrutar de las utilidades que ésta genera sin preocuparte por labores operativas y comerciales y
+                    teniendo el control y el conocimiento en tiempo real de tu inversión:</p>
 
-        <div class="calendario">
 
-            <!-- Principio del widget integrado de Calendly -->
-            <div class="calendly-inline-widget"
-                data-url="https://calendly.com/viverentablepe/camara-maduracion?hide_gdpr_banner=1&primary_color=2de601">
             </div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-            <!-- Final del widget integrado de Calendly -->
+
+            <div class="interior">
+                <span>01</span>
+                <details>
+                    <summary>CONOCE EL POTENCIAL DE RENTABILIDAD <strong>+</strong></summary>
+                    <p>• Aprende sobre el creciente mercado del banano y cómo puedes obtener ganancias tangibles desde
+                        el primer día brindando servicios para el sector bananero.</p>
+                </details>
+                <span>02</span>
+                <details>
+                    <summary>ENTIENDE EL IMPACTO DE LA DEMANDA Y OFERTA<strong>+</strong></summary>
+                    <p>• Obtén información valiosa sobre el crecimiento del consumo de banano en Perú y la demanda
+                        insatisfecha de servicios de maduración en ciudades como Lima, Arequipa, Trujillo, Piura.
+                        Comprende cómo esta brecha entre la demanda y la oferta puede ser una oportunidad de inversión
+                        lucrativa para ti.</p>
+                </details>
+                <span>03</span>
+                <details>
+                    <summary>DESCUBRE UNA ALTERNATIVA RENTABLE A LA AGRICULTURA TRADICIONAL<strong>+</strong></summary>
+                    <p>• Compara los riesgos y beneficios de invertir en la agricultura tradicional con la opción de
+                        participar en el negocio de servicios de maduración de banano. Aprende por qué esta alternativa
+                        ofrece ingresos constantes desde el primer día y cómo puedes recuperar tu inversión en un plazo
+                        mucho más corto.</p>
+                </details>
+                <span>04</span>
+                <details>
+                    <summary>EXPLORA LAS VENTAJAS COMPETITIVAS DEL
+                        SERVICIO DE MADURACIÓN<strong>+</strong></summary>
+                    <p>• Entiende por qué el negocio de maduración de banano ofrece un flujo de ingresos continuo y cómo
+                        puedes diversificar tu inversión al albergar otras frutas en distintas temporadas.</p>
+                </details>
+
+
+
+
+            </div>
+
+        </div>
+        <div class="calendario">
+            <div class="contenedor_calendario">
+                <!-- Principio del widget integrado de Calendly -->
+                <!-- Principio del widget integrado de Calendly -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/vive-rentable/reunion-de-inversion"
+                    style="min-width:320px;height:100%;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                    async></script>
+                <!-- Final del widget integrado de Calendly -->
+                <!-- Final del widget integrado de Calendly -->
+            </div>
+
         </div>
 
     </section>
@@ -1196,41 +252,15 @@
     </article> -->
 
 
+<section class="agregado">
+    <a href="#contact">¡HAZ CLIC Y AGENDA UNA CITA
+        CON UN ASESOR COMERCIAL</a>
+    <p>¡No pierdas la oportunidad de explorar el potencial de inversión en el negocio del banano con VIVE Rentable!</p>
+
+</section>
 
 
 
-    <section class="seccion_04">
-
-        <div class="inferior">
-            <div class="cont1">
-                <h2>SÉ SOCIO DESDE S/.20,000</h2> <br>
-                <p>y</p>
-
-            </div>
-            <div class="cont2">
-                <p>• Conviértete en uno de los <span>inversionistas
-                        pioneros</span> que satisfaga la creciente demanda
-                    de servicios de maduración y conservación.</p>
-                <p><span>• Factura desde el primer día</span> de instalada la cámara</p>
-                <p>• Ser parte de un negocio cuyo <span>retorno</span> sobre la inversión es a <span>6 meses</span></p>
-                <p>• Más del 100% de rentabilidad anual</p>
-                <p>• Negocio de por vida</p>
-            </div>
-
-
-        </div>
-        <div class="boton">
-            <a href="#contact">¡HAZ CLIC Y AGENDA UNA CITA <br>
-                CON UN ASESOR COMERCIAL</a>
-        </div>
-        <div class="cont3">
-            <h2>¡No pierdas la oportunidad de explorar el potencial de inversión en el negocio del banano con VIVE
-                Rentable!</h2>
-
-        </div>
-
-
-    </section>
 
     <section class="seccion_05">
 
@@ -1290,26 +320,28 @@
 
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var toggles = document.querySelectorAll('.toggle');
-            var border = document.querySelector('.accordion-item');
-            toggles.forEach(function (toggle) {
-                toggle.addEventListener('click', function () {
-                    var content = this.parentElement.nextElementSibling;
-                    content.classList.toggle('active');
-                    this.textContent = content.classList.contains('active') ? '−' : '+';
-                });
+        const accordionItems = document.querySelectorAll('.accordion-item');
 
+        accordionItems.forEach(item => {
+            const title = item.querySelector('.accordion-title');
+            const button = title.querySelector('.accordion-btn');
+            const content = item.querySelector('.accordion-content');
+
+            button.addEventListener('click', () => {
+                const expanded = content.getAttribute('aria-expanded') === 'true';
+
+                content.setAttribute('aria-expanded', !expanded);
+                content.style.maxHeight = expanded ? null : content.scrollHeight + 'px';
+                button.textContent = expanded ? '+' : '-';
             });
         });
-
-
-
     </script>
     <script src="./js/popup.js"></script>
     <script src="/js/main.js"></script>
 
 </body>
+
+
 
 
 
