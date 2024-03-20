@@ -55,7 +55,517 @@
     </script>
 
 </head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+}
+
+
+.section_div {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* BANNER */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.1s ease-in-out;
+    background-image: url('./assets/im001.jpeg');
+    animation: banner 28s infinite linear;
+
+}
+
+.banner-content {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(10, 10, 21, 0.749);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.text_content h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    color: #fff;
+}
+
+.text_content h2 {
+    font-weight: 500;
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 250px;
+
+
+}
+
+
+@keyframes banner {
+
+    0%,
+    25% {
+        background-image: url('./assets/fotos/001.jpg');
+    }
+
+    26%,
+    50% {
+        background-image: url('./assets/fotos/004.jpg');
+    }
+
+    51%,
+    75% {
+        background-image: url('./assets/fotos/002.jpg');
+    }
+
+    76%,
+    100% {
+        background-image: url('./assets/fotos/001.jpg');
+    }
+}
+
+
+/* ============================================ */
+/* Secciones */
+
+.linea {
+    width: 100%;
+    height: 40px;
+    background-color: #005E6C;
+}
+
+.seccion_01 {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linea1 {
+    width: 700px;
+    height: 5px;
+    background-color: #005E6C;
+}
+
+.seccion_01 p {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #005E6C;
+    font-style: italic;
+    font-weight: 500
+}
+
+.seccion_01 span {
+    color: #00AE45;
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+/* seccion 2 */
+.seccion_02 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+}
+
+.seccion_02 img {
+    width: 500px;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.seccion_02 div {
+
+    margin: auto;
+}
+
+.seccion_02 h2 {
+    width: 60%;
+    color: #00AE45;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+
+}
+
+.seccion_02 p {
+    width: 85%;
+    font-size: 1.3rem;
+    color: #005E6C;
+    font-weight: 500;
+}
+
+.seccion_02 span {
+    color: #00AE45;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* seccion 3 */
+.seccion_03{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-image: url("./assets/nuevo/fondo03.jpg");
+}
+
+.texto03{
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.texto03 h3{
+
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.texto03 p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.seccion_04{
+    width: 100%;
+    height: 30vh;
+
+}
+
+.seccion_04 h3{
+    
+    font-size: 2.7rem;
+    font-weight: 800;
+    color: #00AE45;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.seccion_05{
+    background-image: url("./assets/banner_img/fondo-verde-banner.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cont_calendario{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.seccion_06{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion_06 h3{
+    width: 60%;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #00AE45;
+    text-align: center;
+    font-style: italic;
+
+
+}
+
+.seccion_07{
+
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-image: url('./assets/im001.jpeg');
+    background-size: cover;
+    color: black;
+}
+
+.seccion_07::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 95, 53, 0.393);
+    /* Ajusta el valor alfa para controlar la opacidad */
+}
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #005E6C;
+}
+
+.footer__container {
+    padding-top: 20px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.footer__col h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white
+}
+
+.footer__col p {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.footer__col a {
+    display: block;
+    margin-bottom: 1rem;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer__col a span {
+    margin-right: 5px;
+}
+
+.footer__col a:hover {
+    color: #00AE45;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__socials span {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.footer__bar {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo_negativo {
+    width: 200px;
+    height: 100px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    /* BANNER */
+    .banner {
+        height: 70vh;
+    }
+
+    .text_content {
+        padding: 20px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        /* Centra los elementos en dispositivos móviles */
+    }
+
+    .text_content h1 {
+        font-size: 20px;
+    }
+
+    .text_content h2 {
+        font-size: 15px;
+        margin-bottom: 20px;
+        /* Reduce el espacio entre elementos en dispositivos móviles */
+    }
+
+    .logo {
+        width: 120px;
+        /* Reduce el tamaño del logo en dispositivos móviles */
+    }
+
+    /* seccion 01 */
+    .seccion_01 p {
+        font-size: 1.2rem;
+        
+    }
+
+    .seccion_01 span {
+        font-size: 1.3rem;
+        
+    }
+
+    /* seccion 02 */
+
+    .seccion_02
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .seccion_02 img {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .seccion_02 div{
+        padding: 20px;
+    }
+
+    .seccion_02 h2 {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        
+    }
+
+    .seccion_02 p {
+        margin: auto;
+        text-align: center;
+        width: 80%;
+        font-size: 1rem;
+        
+    }   
+
+    .seccion_02 span {
+        font-size: 1.1rem;
+        
+    }
+
+
+    /* seccion 3 */
+
+    .seccion_03{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 65vh;
+    }
+
+
+    /* seccion 4 */
+
+    .seccion_04{
+        height: 30vh;
+    }
+    .seccion_04 h3{
+        font-size: 1.8rem;
+        padding-top: 10vh;
+    }
+
+
+
+    /* seccion 6 */
+
+    .seccion_06{
+        height: 30vh;
+    }
+
+    .seccion_06 h3{
+        width: 80%;
+        font-size: 1.5rem;
+        
+    }
+
+    /* seccion 7 */
+
+    .seccion_07{
+        height: 200px;
+    }
+
+
+
+    /* Footer Styles */
+    .footer__container {
+        padding: 20px;
+    }
+
+    .footer__col h4 {
+        font-size: 20px;
+    }
+
+    .footer__col p {
+        font-size: 16px;
+    }
+
+    .footer__socials span {
+        font-size: 24px;
+    }
+
+    .footer__bar {
+        font-size: 16px;
+    }
+
+    .logo_negativo {
+        width: 100px;
+        height: 50px;
+    }
+}
+</style>
 
 
 
@@ -91,166 +601,76 @@
     </header>
     <div class="linea"></div>
 
-
     <section class="seccion_01">
-        <div class="s1_cont">
-            <img src="./assets/fotos/001.jpg" alt="">
-            <div class="parrafo1">
-                <p>En pleno auge de la Agricultura peruana, invertir en las necesidades de un sector que crece de manera
-                    acelerada y que aún pocos interesados lo hacen, es <span>invertir de forma visionaria</span>. Los
-                    que lo hacen,
-                    no sólo ven retornar dicha inversión de manera rápida, sino que <span>multiplican su capital.</span>
-                </p>
-                <p>Muchos apuestan en sembrar y pocos en satisfacer las necesidades de los que siembran y del producto
-                    cosechado: <span>¡Los servicios de conservación y maduración!</span>
-                </p>
-            </div>
-        </div>
-        <div class="s1_cont coo">
-            <div class="parrafo2">
-                <p><span>La demanda supera con creces a la oferta actual.</span> Miles de estos servicios de maduración
-                    se facturan diariamente, pero miles más quedan en espera debido a la escasez de cámaras de
-                    maduración en Lima y en todo el Perú. <br>
-                    Es ahí donde se abren las <span>oportunidades para todo inversor visionario.</span></p>
-                <p> <span class="spann"> ¡Es hora de capitalizar esta brecha en el mercado!</span></p>
-
-            </div>
-            <img src="./assets/fotos/002.jpg" alt="">
-        </div>
+        <div class="linea1"></div>
+        <p>Sabemos que tienes el sueño de ser parte de un <span>negocio importante y rentable</span> con el que puedas
+            vivir
+            tranquilo y sin preocupaciones. Te damos la bienvenida a una <span>OPORTUNIDAD ÚNICA</span> en un sector
+            donde la demanda
+            siempre supera la oferta, <span>Las cámaras de maduración de banano.</span></p>
+        <div class="linea1"></div>
 
     </section>
 
     <section class="seccion_02">
-        <div class="s02_texto">
-            <h2>INVERTIR BIEN Y <br> CON VISIÓN ES:</h2>
-            <p>INVERTIR EN LAS NECESIDADES DE UN SECTOR QUE CRECE DE MANERA ACELERADA Y QUE AÚN POCOS INVERSIONISTAS LO
-                HACEN.</p>
-            <h3>“LA CÁMARA DE MADURACIÓN DE FRUTAS”</h3>
-
-        </div>
-        <img src="./assets/banner_img/platanos-coomplemento.png" alt="imagen">
-
-    </section>
-
-
-    <section class="gen_04">
-        <div class="seccion_04">
-            <h3>¿Te gustaría ser parte de este rentable negocio?</h3>
-            <h4>SÉ SOCIO DESDE <span>S/.20,000</span></h4>
-            <div>
-                <div class="s4_cont">
-                    <img src="./assets/nuevo/s401.png" alt="">
-                    <p>Conviértete en uno de los <span>inversionistas pioneros</span>
-                        que satisfaga la creciente demanda
-                        de servicios de maduración y conservación.</p>
-                </div>
-                <div class="s4_cont">
-                    <img src="./assets/nuevo/s402.png" alt="">
-                    <p><span>Factura desde el primer día</span> de instalada
-                        la cámara</p>
-                </div>
-                <div class="s4_cont">
-                    <img src="./assets/nuevo/s403.png" alt="">
-                    <p>Ser parte de un negocio cuyo <span>retorno</span> sobre la inversión es aproximadamente <span>6
-                            meses a un año</span>
-                    </p>
-                </div>
-                <div class="s4_cont">
-                    <img src="./assets/nuevo/s404.png" alt="">
-                    <p>Más del <span>100%</span> de rentabilidad anual</p>
-                </div>
-                <div class="s4_cont">
-                    <img src="./assets/nuevo/s405.png" alt="">
-                    <p>Negocio de por vida</p>
-                </div>
-            </div>
-
-
+        <img src="./assets/nuevo/05_sec2.png" alt="">
+        <div>
+            <h2>
+                ¿Qué OPORTUNIDAD es ésta?
+            </h2>
+            <p>Es la del negocio <span>de una fruta que es básica en el consumo</span> de millones de personas en la
+                ciudad. <span>Además
+                    de ser uno de los principales productos mundiales,</span> éstos bananos necesitan de unos cuidados
+                precisos para
+                mantener su valor tanto nutricional como monetario.</p>
 
         </div>
 
 
     </section>
 
+    <section class="seccion_03">
+        <div class="texto03">
+            <h3>Luego de analizar a profundidad el negocio.....</h3>
+            <p>Te ofrecemos ser partícipe de un proyecto en el que podrás decidir ser socio junto a otros inversionistas
+                o el único que quiera llevarse todo este beneficio en este importante y prometedor legado. No tendrás
+                que preocuparte por nada, ya que nosotros gestionaremos todo para que puedas recibir tus ganancias y tu
+                capital.</p>
 
-
-    <!-- MAILCHIMP -->
-    <section class="seccion_03" id="contact">
-        <div class="s3_01">
-            <div class="contenedor_acordion">
-                <h3>¡Descubre cómo ser socio en una cita con un Asesor!</h3>
-                <p>En esta reunión el asesor(a) comercial te explicará como puedes ser socio de una cámara de maduración
-                    y disfrutar de las utilidades que ésta genera sin preocuparte por labores operativas y comerciales y
-                    teniendo el control y el conocimiento en tiempo real de tu inversión:</p>
-
-
-            </div>
-
-            <div class="interior">
-                <div><span>01</span>
-                    <details>
-                        <summary>CONOCE EL POTENCIAL DE RENTABILIDAD <strong>+</strong></summary>
-                        <p>• Aprende sobre el creciente mercado del banano y cómo puedes obtener ganancias tangibles
-                            desde
-                            el primer día brindando servicios para el sector bananero.</p>
-                    </details>
-                </div>
-                <div>
-                    <span>02</span>
-                    <details>
-                        <summary>ENTIENDE EL IMPACTO DE LA DEMANDA Y OFERTA<strong>+</strong></summary>
-                        <p>• Obtén información valiosa sobre el crecimiento del consumo de banano en Perú y la demanda
-                            insatisfecha de servicios de maduración en ciudades como Lima, Arequipa, Trujillo, Piura.
-                            Comprende cómo esta brecha entre la demanda y la oferta puede ser una oportunidad de
-                            inversión
-                            lucrativa para ti.</p>
-                    </details>
-                </div>
-                <div>
-                    <span>03</span>
-                    <details>
-                        <summary>DESCUBRE UNA ALTERNATIVA RENTABLE A LA AGRICULTURA TRADICIONAL<strong>+</strong>
-                        </summary>
-                        <p>• Compara los riesgos y beneficios de invertir en la agricultura tradicional con la opción de
-                            participar en el negocio de servicios de maduración de banano. Aprende por qué esta
-                            alternativa
-                            ofrece ingresos constantes desde el primer día y cómo puedes recuperar tu inversión en un
-                            plazo
-                            mucho más corto.</p>
-                    </details>
-                </div>
-                <div>
-                    <span>04</span>
-                    <details>
-                        <summary>EXPLORA LAS VENTAJAS COMPETITIVAS DEL
-                            SERVICIO DE MADURACIÓN<strong>+</strong></summary>
-                        <p>• Entiende por qué el negocio de maduración de banano ofrece un flujo de ingresos continuo y
-                            cómo
-                            puedes diversificar tu inversión al albergar otras frutas en distintas temporadas.</p>
-                    </details>
-                </div>
-
-            </div>
+        </div>
+        <div>
 
         </div>
 
     </section>
 
-
-    <section class="agregado">
-        <a href="https://wa.link/garf4f" target="_blank">¡HAZ CLIC Y AGENDA UNA CITA <br>
-            CON UN ASESOR COMERCIAL <img src="./assets/fotos/wsp.png" alt=""></a>
-        <p>¡No pierdas la oportunidad de explorar el potencial de inversión en el negocio del banano con VIVE Rentable!
-        </p>
+    <section class="seccion_04">
+        <h3>¡Descubre cómo ser socio <br> en una cita con un Asesor!</h3>
 
     </section>
-
-
-
 
     <section class="seccion_05">
+        <div class="cont_calendario">
+            <!-- Principio del widget integrado de Calendly -->
+            <div class="calendly-inline-widget"
+                data-url="https://calendly.com/vive-rentable/reunion-de-inversion?hide_gdpr_banner=1"
+                style="min-width:100%;height:100%;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Final del widget integrado de Calendly -->
+        </div>
 
     </section>
+
+    <section class="seccion_06">
+        <h3>Ésta no es solo una inversión, sino la oportunidad de incursionar y ser un agente de cambio en un mercado en
+            auge que muy pocos conocen o entienden.</h3>
+
+    </section>
+
+    <section class="seccion_07">
+
+    </section>
+
 
     <footer class="footer">
         <div class="section__container footer__container">
